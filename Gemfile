@@ -2,7 +2,8 @@
 
 source "https://rubygems.org"
 
-DECIDIM_VERSION = "0.19.0"
+# DECIDIM_VERSION = "0.19.0"
+DECIDIM_VERSION = { git: "https://github.com/populatetools/decidim", branch: "10-omniauth-multitenant" }
 
 ruby RUBY_VERSION
 
