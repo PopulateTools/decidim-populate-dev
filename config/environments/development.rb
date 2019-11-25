@@ -63,4 +63,7 @@ Rails.application.configure do
 
   # No precompilation on demand on first request
   config.assets.check_precompiled_asset = false
+
+  # Background processing
+  config.active_job.queue_adapter = :sidekiq
 end

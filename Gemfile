@@ -14,6 +14,8 @@ gem "puma", "~> 3.12"
 gem "uglifier", "~> 4.1"
 gem "faker", "~> 1.9"
 gem "letter_opener_web", "~> 1.3"
+gem "rollbar"
+gem "sidekiq", "~> 5.2"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
