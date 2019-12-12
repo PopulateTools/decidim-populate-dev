@@ -1,0 +1,6 @@
+---
+en:
+  decidim:
+    components:
+      site_a:
+        name: SiteA
