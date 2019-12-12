@@ -1,0 +1,10 @@
+---
+
+base_locale: en
+locales: [en]
+
+ignore_unused:
+  - "decidim.components.site_b.name"
+
+ignore_missing:
+  - decidim.participatory_processes.scopes.global
