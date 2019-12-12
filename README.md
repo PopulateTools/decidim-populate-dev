@@ -1,22 +1,43 @@
 # decidim-demo
 
-Free Open-Source participatory democracy, citizen participation and open government for cities and organizations
-
-This is the open-source repository for decidim-demo, based on [Decidim](https://github.com/decidim/decidim).
-
 ## Setting up the application
 
-You will need to do some steps before having the app working properly once you've deployed it:
+Clone the repository:
 
-1. Open a Rails console in the server: `bundle exec rails console`
-2. Create a System Admin user:
-```ruby
-user = Decidim::System::Admin.new(email: <email>, password: <password>, password_confirmation: <password>)
-user.save!
 ```
-3. Visit `<your app url>/system` and login with your system admin credentials
-4. Create a new organization. Check the locales you want to use for that organization, and select a default locale.
-5. Set the correct default host for the organization, otherwise the app will not work properly. Note that you need to include any subdomain you might be using.
-6. Fill the rest of the form and submit it.
+git clone git@github.com:PopulateTools/decidim-demo.git $DEV_DIR/decidim-demo
+```
 
-You're good to go!
+Install the required Ruby version and dependencies:
+
+```bash
+cd $DEV_DIR/decidim-demo
+rbenv install $(cat .ruby-version)
+bundle install
+```
+
+Generate `.rbenv-vars` and fill in the values of `SECRET_KEY_BASE` and `RAILS_MASTER_KEY` (ask for the values):
+
+```bash
+cp .rbenv-vars.example .rbenv-vars
+```
+
+Initialize the database:
+
+```bash
+bin/rails db:setup
+```
+
+Load the seeds:
+
+```bash
+bin/rails db:seed
+```
+
+Start the server:
+
+```bash
+bin/rails s
+```
+
+The application is available at [http://localhost:3000/](http://localhost:3000/)
