@@ -2,8 +2,8 @@
 
 source "https://rubygems.org"
 
-# DECIDIM_VERSION = "0.19.0"
-DECIDIM_VERSION = { git: "https://github.com/populatetools/decidim", branch: "10-omniauth-multitenant" }
+DECIDIM_VERSION = "0.19.0"
+#DECIDIM_VERSION = { git: "https://github.com/populatetools/decidim", branch: "10-omniauth-multitenant" }
 
 ruby RUBY_VERSION
 
@@ -29,3 +29,6 @@ group :development do
   gem "spring-watcher-listen", "~> 2.0"
   gem "web-console", "~> 3.5"
 end
+
+gem "decidim-site_a", path: "decidim-module-site_a"
+gem "decidim-site_b", path: "decidim-module-site_b"
