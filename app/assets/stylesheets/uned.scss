@@ -131,6 +131,7 @@ body {
   text-align: center;
   color: #A5B362;
   padding: 1rem;
+  cursor: pointer;
 }
 
 .uned-poll-buttons-top-slider.is-active-btn {
@@ -180,6 +181,27 @@ body {
     left: 0;
     background-color: transparent;
     z-index: 2;
+  }
+  .uned-poll-buttons-bottom-text-top-prev,
+  .uned-poll-buttons-bottom-arrow-left {
+    display: none;
+  }
+  &.is-active-last {
+    .uned-poll-buttons-bottom-text-top {
+      text-align: right;
+    }
+    .uned-poll-buttons-bottom-arrow {
+      right: initial;
+      left: 1rem;
+    }
+    .uned-poll-buttons-bottom-arrow-right,
+    .uned-poll-buttons-bottom-text-top-next {
+      display: none;
+    }
+    .uned-poll-buttons-bottom-text-top-prev,
+    .uned-poll-buttons-bottom-arrow-left {
+      display: block;
+    }
   }
 }
 

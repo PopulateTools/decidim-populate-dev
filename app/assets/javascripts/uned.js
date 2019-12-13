@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const buttonBottomSibling = document.getElementById(`uned-poll-buttons-bottom-slider-${idNumberSiblingNext}`)
       buttonBottom.classList.remove('is-disable')
       buttonBottomSibling.classList.remove('is-disable')
-      buttonBottom.classList.add('is-active')
+      buttonBottom.classList.add('is-active', 'is-active-last')
       buttonBottomSibling.classList.add('is-active')
     }
     const containerText = document.getElementById(`uned-poll-slider-content-text-${idNumber[0]}`)
@@ -77,10 +77,11 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll(".uned-poll-button-container").forEach(container => container.classList.remove('is-active'))
 
     if(e.target.classList.contains('is-active-last') && e.target.id !== 'uned-poll-buttons-bottom-slider-1') {
+      document.querySelectorAll(".uned-poll-button-container").forEach(button => button.classList.remove('is-active-last'))
       buttonBottomActivePrev.classList.remove('is-disable', 'is-active-last')
       buttonBottomActiveNext.classList.remove('is-disable')
-      buttonBottomActivePrev.classList.add('is-active')
-      buttonBottomActiveNext.classList.add('is-active-last')
+      buttonBottomActivePrev.classList.add('is-active', 'is-active-last')
+      buttonBottomActiveNext.classList.add('is-active')
     } else if(e.target.id === 'uned-poll-buttons-bottom-slider-1') {
       buttonBottomActive.classList.remove('is-disable')
       buttonBottomActiveNext.classList.remove('is-disable')
@@ -90,8 +91,9 @@ document.addEventListener("DOMContentLoaded", function() {
       buttonBottomActive.classList.remove('is-disable')
       buttonBottomActivePrev.classList.remove('is-disable')
       buttonBottomActive.classList.add('is-active')
-      buttonBottomActivePrev.classList.add('is-active')
+      buttonBottomActivePrev.classList.add('is-active', 'is-active-last')
     } else {
+      document.querySelectorAll(".uned-poll-button-container").forEach(button => button.classList.remove('is-active-last'))
       buttonBottomActivePrev.classList.remove('is-disable')
       buttonBottomActivePrev.classList.add('is-active')
       buttonBottomActivePrev.classList.add('is-active-last')
