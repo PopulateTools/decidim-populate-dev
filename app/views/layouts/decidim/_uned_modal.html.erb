@@ -49,19 +49,23 @@
     <img class="uned-poll-img-arrow" src="<%= asset_path 'arrow-left.svg' %>">
     <img class="uned-poll-img-arrow" src="<%= asset_path 'arrow-right.svg' %>">
     <article class="uned-poll-content-footer">
-      <button id="uned-poll-button-top-1" class="uned-poll-buttons-top-slider is-active-btn">¿Qué son las TBDM?</button>
-      <button id="uned-poll-button-top-2" class="uned-poll-buttons-top-slider">Casos previos</button>
-      <button id="uned-poll-button-top-3" class="uned-poll-buttons-top-slider">Hacia un marco ético</button>
-      <button id="uned-poll-button-top-4" class="uned-poll-buttons-top-slider">Cuestiones relevantes</button>
-      <button id="uned-poll-button-top-5" class="uned-poll-buttons-top-slider">Participa</button>
+      <div class="uned-poll-content-buttons-top">
+        <button id="uned-poll-button-top-1" class="uned-poll-buttons-top-slider is-active-btn">¿Qué son las TBDM?</button>
+        <button id="uned-poll-button-top-2" class="uned-poll-buttons-top-slider">Casos previos</button>
+        <button id="uned-poll-button-top-3" class="uned-poll-buttons-top-slider">Hacia un marco ético</button>
+        <button id="uned-poll-button-top-4" class="uned-poll-buttons-top-slider">Cuestiones relevantes</button>
+        <button id="uned-poll-button-top-5" class="uned-poll-buttons-top-slider">Participa</button>
+      </div>
       <div class="uned-poll-slider-container-content">
         <div id="uned-poll-slider-content-text-1" class="uned-poll-slider-content is-active">
-          <h1>Soy el uno</h1>
-          <p>Nuestras comunicaciones, nuestro entretenimiento, nuestras relaciones comerciales y nuestros aprendizajes suceden en la Web. Así, las compañías hacen uso de nuestros datos para afectarnos: nos recomiendan una película o un libro, nos sirven anuncios persona lizados, nos ayudan a acordarnos de fechas importantes. Esta filosofía es de aplicación también en la enseñanza y el aprendizaje, y su fin es avanzar hacia escenarios de aprendizaje personalizado.</p>
-          <p>Algunos ejemplos: es posible modelar de forma automática el conocimiento, el comportamiento o la experiencia del alumnado, es posible segmentarlo en perfiles que permitan adaptar los entornos de aprendizaje, es posible modelar los contenidos para extraer de forma automática las unidades de estudio o los conceptos clave, y su dificultad, así como es posible diseñar procesos de aprendizaje más efectivos a partir de los datos para responder a cuestiones como:</p>
-          <p>¿qué elementos son más efectivos para promover el aprendizaje?¿un cambio concreto en los contenidos o las metodologías puede mejorar el desempeño y la retención? ¿Qué tipo de metodologías son mejores en términos de la experiencia del alumnado?</p>
-          <p>Todas estas aplicaciones están en desarrollo y pueden ser tenidas en cuenta para su aplicación en el ámbito de procesos de enseñanza/aprendizaje. Sin embargo, es importante señalar que, obviamente, los datos pueden ser usados también en otros ámbitos, y que en el futuro pueden surgir nuevas propuestas relacionadas con el uso de datos masivos.</p>
-          <p>Por ese motivo, si bien está centrado en los procesos de enseñanza/aprendizaje, el marco ético del que la UNED quiere dotarse aspira a englobar cualquier otro uso de datos masivos que pueda ser concebido en el futuro, esté o no relacionado con dichos procesos.</p>
+          <h1 class="uned-poll-slider-content-title">¿QUÉ SON Y PARA QUÉ PUEDEN SERVIR EN LA UNED LAS TECNOLOGÍAS BASADAS EN DATOS MASIVOS?</h1>
+          <p class="uned-poll-slider-content-text">Nuestras comunicaciones, nuestro entretenimiento, nuestras relaciones comerciales y nuestros aprendizajes suceden en la Web. Así, las compañías hacen uso de nuestros datos para afectarnos: nos recomiendan una película o un libro, nos sirven anuncios persona lizados, nos ayudan a acordarnos de fechas importantes. Esta filosofía es de aplicación también en la enseñanza y el aprendizaje, y su fin es avanzar hacia escenarios de aprendizaje personalizado.</p>
+          <p class="uned-poll-slider-content-text">Algunos ejemplos: es posible modelar de forma automática el conocimiento, el comportamiento o la experiencia del alumnado, es posible segmentarlo en perfiles que permitan adaptar los entornos de aprendizaje, es posible modelar los contenidos para extraer de forma automática las unidades de estudio o los conceptos clave, y su dificultad, así como es posible diseñar procesos de aprendizaje más efectivos a partir de los datos para responder a cuestiones como:</p>
+          <p class="uned-poll-slider-content-text-list">¿qué elementos son más efectivos para promover el aprendizaje?</p>
+          <p class="uned-poll-slider-content-text-list">¿un cambio concreto en los contenidos o las metodologías puede mejorar el desempeño y la retención?</p>
+          <p class="uned-poll-slider-content-text-list">¿Qué tipo de metodologías son mejores en términos de la experiencia del alumnado?</p>
+          <p class="uned-poll-slider-content-text">Todas estas aplicaciones están en desarrollo y pueden ser tenidas en cuenta para su aplicación en el ámbito de procesos de enseñanza/aprendizaje. Sin embargo, es importante señalar que, obviamente, los datos pueden ser usados también en otros ámbitos, y que en el futuro pueden surgir nuevas propuestas relacionadas con el uso de datos masivos.</p>
+          <p class="uned-poll-slider-content-text">Por ese motivo, si bien está centrado en los procesos de enseñanza/aprendizaje, el marco ético del que la UNED quiere dotarse aspira a englobar cualquier otro uso de datos masivos que pueda ser concebido en el futuro, esté o no relacionado con dichos procesos.</p>
         </div>
         <div id="uned-poll-slider-content-text-2" class="uned-poll-slider-content is-disable">
           <h1>Soy el dos</h1>
@@ -119,6 +123,7 @@
             <span class="uned-poll-buttons-bottom-text-top uned-poll-buttons-bottom-text-top-next">SIGUIENTE</span>
             <span class="uned-poll-buttons-bottom-text-top uned-poll-buttons-bottom-text-top-prev">ANTERIOR</span>
             <img src="<%= asset_path 'arrow-left-bottom.svg' %>" alt="" class="uned-poll-buttons-bottom-arrow uned-poll-buttons-bottom-arrow-left">
+            <img src="<%= asset_path 'arrow-right-bottom.svg' %>" alt="" class="uned-poll-buttons-bottom-arrow uned-poll-buttons-bottom-arrow-right">
             <span class="uned-poll-buttons-bottom-text-bottom">CUESTIONES RELEVANTES</span>
           </button>
           <button class="uned-poll-button-container is-disable" id="uned-poll-buttons-bottom-slider-5">
