@@ -222,6 +222,21 @@ body {
     .uned-poll-buttons-bottom-arrow-left {
       display: block;
     }
+    .uned-poll-buttons-bottom-text-bottom {
+      text-align: left;
+    }
+  }
+  &.first-button {
+    .uned-poll-buttons-bottom-arrow-left,
+    .uned-poll-buttons-bottom-text-top-prev {
+      opacity: 0;
+    }
+  }
+  &.last-button {
+    .uned-poll-buttons-bottom-arrow-right,
+    .uned-poll-buttons-bottom-text-top-next {
+      opacity: 0;
+    }
   }
 }
 
@@ -230,6 +245,7 @@ body {
   &.is-disable {
     opacity: .1;
     display: inline-block;
+    pointer-events: none;
   }
 }
 
@@ -360,7 +376,8 @@ body {
 .uned-poll-slider-participa {
   width: 100%;
   margin: 0 auto;
-  border-top: 1px solid #004F75;
+  border-top: 1px solid rgba(0, 79, 117, .5);
+  padding-top: .5rem;
 }
 
 .uned-poll-slider-participa-title,
