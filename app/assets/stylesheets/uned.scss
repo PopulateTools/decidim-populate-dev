@@ -227,6 +227,10 @@ body {
 
 .uned-poll-slider-participa-button-container {
   margin-top: 3rem;
+  &.is-disable {
+    opacity: .1;
+    display: inline-block;
+  }
 }
 
 .uned-poll-buttons-bottom-text-top {
