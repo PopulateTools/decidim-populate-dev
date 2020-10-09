@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_07_084089) do
+ActiveRecord::Schema.define(version: 2020_10_09_122333) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1246,6 +1246,14 @@ ActiveRecord::Schema.define(version: 2020_10_07_084089) do
     t.integer "decidim_organization_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "hashtag"
+    t.string "group_url"
+    t.jsonb "developer_group"
+    t.jsonb "local_area"
+    t.jsonb "meta_scope"
+    t.jsonb "target"
+    t.jsonb "participatory_scope"
+    t.jsonb "participatory_structure"
     t.index ["decidim_organization_id"], name: "decidim_participatory_process_group_organization"
   end
 
