@@ -1,7 +1,7 @@
 GIT
   remote: git@github.com:decidim/decidim.git
-  revision: 0c0d8514d9b12bb907e6366bfccf5266e9ab0f67
-  branch: feature/process_groups_improvements
+  revision: c4d14bc129008ec360100d992244434e0b019c43
+  branch: feature/process_groups_improvements-metadata_title_content_block
   specs:
     decidim (0.23.0.dev)
       decidim-accountability (= 0.23.0.dev)
@@ -24,6 +24,27 @@ GIT
       decidim-system (= 0.23.0.dev)
       decidim-templates (= 0.23.0.dev)
       decidim-verifications (= 0.23.0.dev)
+    decidim-consultations (0.23.0.dev)
+      decidim-admin (= 0.23.0.dev)
+      decidim-comments (= 0.23.0.dev)
+      decidim-core (= 0.23.0.dev)
+    decidim-initiatives (0.23.0.dev)
+      decidim-admin (= 0.23.0.dev)
+      decidim-comments (= 0.23.0.dev)
+      decidim-core (= 0.23.0.dev)
+      decidim-verifications (= 0.23.0.dev)
+      kaminari (~> 1.2, >= 1.2.1)
+      origami (~> 2.1)
+      virtus-multiparams (~> 0.1)
+      wicked (~> 1.3)
+      wicked_pdf (~> 1.4)
+      wkhtmltopdf-binary (~> 0.12)
+
+GIT
+  remote: git@github.com:decidim/decidim.git
+  revision: 56b0726b6ac9765180d6aa4c9032be51a005d49d
+  branch: feature/process_groups_improvements
+  specs:
     decidim-accountability (0.23.0.dev)
       decidim-comments (= 0.23.0.dev)
       decidim-core (= 0.23.0.dev)
@@ -62,10 +83,6 @@ GIT
       decidim-core (= 0.23.0.dev)
       jquery-rails (~> 4.3)
       redcarpet (~> 3.4)
-    decidim-consultations (0.23.0.dev)
-      decidim-admin (= 0.23.0.dev)
-      decidim-comments (= 0.23.0.dev)
-      decidim-core (= 0.23.0.dev)
     decidim-core (0.23.0.dev)
       active_link_to (~> 1.0)
       anchored (>= 1.1.0)
@@ -161,17 +178,6 @@ GIT
       wkhtmltopdf-binary (~> 0.12)
     decidim-generators (0.23.0.dev)
       decidim-core (= 0.23.0.dev)
-    decidim-initiatives (0.23.0.dev)
-      decidim-admin (= 0.23.0.dev)
-      decidim-comments (= 0.23.0.dev)
-      decidim-core (= 0.23.0.dev)
-      decidim-verifications (= 0.23.0.dev)
-      kaminari (~> 1.2, >= 1.2.1)
-      origami (~> 2.1)
-      virtus-multiparams (~> 0.1)
-      wicked (~> 1.3)
-      wicked_pdf (~> 1.4)
-      wkhtmltopdf-binary (~> 0.12)
     decidim-meetings (0.23.0.dev)
       cells-erb (~> 0.1.0)
       cells-rails (~> 0.0.9)
@@ -787,7 +793,7 @@ GEM
       activesupport
     wisper (2.0.1)
     wisper-rspec (1.1.0)
-    wkhtmltopdf-binary (0.12.6.4)
+    wkhtmltopdf-binary (0.12.6.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
 

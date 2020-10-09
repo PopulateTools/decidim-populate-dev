@@ -4,9 +4,9 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", git: 'git@github.com:decidim/decidim.git', branch: 'feature/process_groups_improvements'
-gem "decidim-consultations", git: 'git@github.com:decidim/decidim.git', branch: 'feature/process_groups_improvements'
-gem "decidim-initiatives", git: 'git@github.com:decidim/decidim.git', branch: 'feature/process_groups_improvements'
+gem "decidim", git: 'git@github.com:decidim/decidim.git', branch: 'feature/process_groups_improvements-metadata_title_content_block'
+gem "decidim-consultations", git: 'git@github.com:decidim/decidim.git', branch: 'feature/process_groups_improvements-metadata_title_content_block'
+gem "decidim-initiatives", git: 'git@github.com:decidim/decidim.git', branch: 'feature/process_groups_improvements-metadata_title_content_block'
 
 gem "bootsnap", "~> 1.3"
 
