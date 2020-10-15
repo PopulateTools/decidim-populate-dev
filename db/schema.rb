@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_09_122333) do
+ActiveRecord::Schema.define(version: 2020_10_15_161540) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1240,7 +1240,7 @@ ActiveRecord::Schema.define(version: 2020_10_09_122333) do
   end
 
   create_table "decidim_participatory_process_groups", id: :serial, force: :cascade do |t|
-    t.jsonb "name", null: false
+    t.jsonb "title", null: false
     t.jsonb "description", null: false
     t.string "hero_image"
     t.integer "decidim_organization_id"
