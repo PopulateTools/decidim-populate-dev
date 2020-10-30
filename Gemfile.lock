@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:decidim/decidim.git
-  revision: 7eef21b399cc9d78f52d16343256c639da6419eb
+  revision: 89d4f90d3ec10e55b83465ac74ce5e3240095cfc
   branch: feature/process_groups_improvements
   specs:
     decidim (0.24.0.dev)
