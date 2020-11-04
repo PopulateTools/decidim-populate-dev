@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_30_204564) do
+ActiveRecord::Schema.define(version: 2020_11_04_131257) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1140,6 +1140,7 @@ ActiveRecord::Schema.define(version: 2020_10_30_204564) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "decidim_participatory_space_type", null: false
+    t.text "reported_content"
     t.index ["decidim_participatory_space_id", "decidim_participatory_space_type"], name: "decidim_moderations_participatory_space"
     t.index ["decidim_reportable_type", "decidim_reportable_id"], name: "decidim_moderations_reportable", unique: true
     t.index ["hidden_at"], name: "decidim_moderations_hidden_at"
@@ -1468,6 +1469,7 @@ ActiveRecord::Schema.define(version: 2020_10_30_204564) do
     t.text "details"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "locale"
     t.index ["decidim_moderation_id", "decidim_user_id"], name: "decidim_reports_moderation_user_unique", unique: true
     t.index ["decidim_moderation_id"], name: "decidim_reports_moderation"
     t.index ["decidim_user_id"], name: "decidim_reports_user"
