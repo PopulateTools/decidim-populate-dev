@@ -1,4 +1,13 @@
 GIT
+  remote: git@github.com:PopulateTools/decidim-module-navigation_maps.git
+  revision: c65e353fc791ee614afbb6ad220189efbe17b60f
+  branch: participatory_process_groups_content_blocks
+  specs:
+    decidim-navigation_maps (1.0)
+      decidim-admin (>= 0.18.0)
+      decidim-core (>= 0.18.0)
+
+GIT
   remote: git@github.com:decidim/decidim.git
   revision: 64aded76351a905b8e2bd3f66b47f3f82e32b72d
   branch: feature/process_groups_improvements
@@ -809,6 +818,7 @@ DEPENDENCIES
   decidim-consultations!
   decidim-dev!
   decidim-initiatives!
+  decidim-navigation_maps!
   faker (~> 1.9)
   letter_opener_web (~> 1.3)
   listen (~> 3.1)

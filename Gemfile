@@ -8,6 +8,8 @@ gem "decidim", git: 'git@github.com:decidim/decidim.git', branch: 'feature/proce
 gem "decidim-consultations", git: 'git@github.com:decidim/decidim.git', branch: 'feature/process_groups_improvements'
 gem "decidim-initiatives", git: 'git@github.com:decidim/decidim.git', branch: 'feature/process_groups_improvements'
 
+gem "decidim-navigation_maps", git: "git@github.com:PopulateTools/decidim-module-navigation_maps.git", branch: "participatory_process_groups_content_blocks"
+
 gem "bootsnap", "~> 1.3"
 
 gem "puma", ">= 4.3.5"
