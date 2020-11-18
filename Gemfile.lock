@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:PopulateTools/decidim-module-navigation_maps.git
-  revision: 622899ea4bc786446d173af6c4be5f7fc8dc809b
+  revision: 64df324421d137a6ea0725ea22c4c0ec0bf4b401
   branch: participatory_process_groups_content_blocks
   specs:
     decidim-navigation_maps (1.0)
@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git@github.com:decidim/decidim.git
-  revision: 642db914e023e1a18b9a3ba26859ed3b31a1a785
+  revision: 622899ea4bc786446d173af6c4be5f7fc8dc809b
   branch: feature/process_groups_improvements
   specs:
     decidim (0.24.0.dev)
