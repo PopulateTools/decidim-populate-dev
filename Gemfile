@@ -4,9 +4,9 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", git: 'https://github.com/decidim/decidim.git', branch: 'feature/process_groups_improvements'
-gem "decidim-consultations", git: 'https://github.com/decidim/decidim.git', branch: 'feature/process_groups_improvements'
-gem "decidim-initiatives", git: 'https://github.com/decidim/decidim.git', branch: 'feature/process_groups_improvements'
+gem "decidim", git: 'https://github.com/decidim/decidim.git', branch: 'develop'
+gem "decidim-consultations", git: 'https://github.com/decidim/decidim.git', branch: 'develop'
+gem "decidim-initiatives", git: 'https://github.com/decidim/decidim.git', branch: 'develop'
 
 gem "decidim-navigation_maps", git: "https://github.com/PopulateTools/decidim-module-navigation_maps.git", branch: "participatory_process_groups_content_blocks"
 
@@ -24,7 +24,7 @@ gem "letter_opener_web", "~> 1.3"
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
-  gem "decidim-dev", git: 'https://github.com/decidim/decidim.git', branch: 'feature/process_groups_improvements'
+  gem "decidim-dev", git: 'https://github.com/decidim/decidim.git', branch: 'develop'
 end
 
 group :development do
