@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim-module-navigation_maps.git
-  revision: 5655514974a27ac6e9e46cca5ae7cceb2242da21
+  revision: 87272e85d9eb9e70d9e56664b12b5e278444fb68
   branch: participatory_process_groups_content_blocks
   specs:
     decidim-navigation_maps (1.1.0)
