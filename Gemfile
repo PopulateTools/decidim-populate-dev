@@ -23,6 +23,8 @@ gem "faker", "~> 2.14"
 
 gem "webpacker", "6.0.0.beta.7"
 gem "letter_opener_web", "~> 1.3"
+# Forcing this version
+gem "declarative-option", "0.1.0"
 
 group :development, :test do
   gem "decidim-dev", git: REPO, branch: BRANCH
