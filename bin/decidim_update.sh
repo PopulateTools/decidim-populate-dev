@@ -1,10 +1,10 @@
 #!/bin/bash
 
 echo "- Updating decidim...."
-bundle update decidim
+bundle update
 echo "- Installing decidim new migrations"
 bin/rails decidim:upgrade
 echo "- Updating application"
-bin/rails update
+bin/update
 echo "Ready! Please commit and deploy"
 
