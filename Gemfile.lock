@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: e9e399df263811ca5f96d885ba8039ef71e14ae2
+  revision: ab04543cd0f39608e4e477026bcfd6e355cf7f7d
   branch: meetings-staging
   specs:
     decidim (0.25.0.dev)
@@ -453,7 +453,7 @@ GEM
     eventmachine (1.2.7)
     eventmachine_httpserver (0.2.1)
     excon (0.81.0)
-    execjs (2.7.0)
+    execjs (2.8.0)
     factory_bot (4.11.1)
       activesupport (>= 3.0.0)
     factory_bot_rails (4.11.1)
@@ -846,8 +846,8 @@ GEM
     system_test_html_screenshots (0.2.0)
       actionpack (>= 5.2, < 6.1.a)
     temple (0.8.2)
-    terminal-table (3.0.0)
-      unicode-display_width (~> 1.1, >= 1.1.1)
+    terminal-table (3.0.1)
+      unicode-display_width (>= 1.1.1, < 3)
     thor (1.1.0)
     thread_safe (0.3.6)
     tilt (2.0.10)
