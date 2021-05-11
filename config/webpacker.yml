@@ -13,31 +13,31 @@ default: &default
   additional_paths:
     - node_modules
     - app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-accountability/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-admin/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-api/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-assemblies/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-blogs/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-budgets/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-comments/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-conferences/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-consultations/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-core/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-debates/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-dev/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-elections/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-forms/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-generators/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-initiatives/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-meetings/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-pages/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-participatory_processes/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-proposals/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-sortitions/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-surveys/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-system/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-templates/app/packs
-    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-377338de3a80/decidim-verifications/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-accountability/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-admin/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-api/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-assemblies/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-blogs/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-budgets/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-comments/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-conferences/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-consultations/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-core/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-debates/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-dev/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-elections/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-forms/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-generators/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-initiatives/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-meetings/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-pages/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-participatory_processes/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-proposals/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-sortitions/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-surveys/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-system/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-templates/app/packs
+    - /home/populate/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/bundler/gems/decidim-afefcec08295/decidim-verifications/app/packs
 
   # Reload manifest.json on all requests so we reload latest compiled packs
   cache_manifest: false
