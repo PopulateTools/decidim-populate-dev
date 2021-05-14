@@ -25,6 +25,9 @@ gem "webpacker", "6.0.0.beta.7"
 # Forcing this version
 gem "declarative-option", "0.1.0"
 
+gem "sidekiq", "~> 5.2"
+gem "letter_opener_web", "~> 1.3"
+
 group :development, :test do
   gem "decidim-dev", git: REPO, branch: BRANCH
 
@@ -34,7 +37,6 @@ group :development, :test do
   # released (greather than 0.18.5)
   # See https://github.com/decidim/decidim/issues/6230
   gem "simplecov", "~> 0.19.0"
-  gem "letter_opener_web", "~> 1.3"
 end
 
 group :development do
