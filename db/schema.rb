@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_12_145615) do
+ActiveRecord::Schema.define(version: 2021_05_14_145719) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -725,6 +725,12 @@ ActiveRecord::Schema.define(version: 2021_05_12_145615) do
     t.index ["decidim_elections_question_id"], name: "decidim_elections_questions_answers"
   end
 
+  create_table "decidim_elections_bulletin_board_closures", force: :cascade do |t|
+    t.bigint "decidim_elections_election_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "decidim_elections_elections", force: :cascade do |t|
     t.jsonb "title"
     t.jsonb "description"
@@ -761,13 +767,15 @@ ActiveRecord::Schema.define(version: 2021_05_12_145615) do
   end
 
   create_table "decidim_elections_results", force: :cascade do |t|
-    t.integer "votes_count", default: 0, null: false
-    t.bigint "decidim_elections_answer_id"
-    t.bigint "decidim_votings_polling_station_id"
+    t.integer "value", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["decidim_elections_answer_id"], name: "index_decidim_elections_results_on_decidim_elections_answer_id"
-    t.index ["decidim_votings_polling_station_id"], name: "index_decidim_elections_results_on_polling_station_id"
+    t.integer "result_type"
+    t.string "closurable_type", null: false
+    t.bigint "closurable_id", null: false
+    t.bigint "decidim_elections_answer_id"
+    t.bigint "decidim_elections_question_id"
+    t.index ["result_type"], name: "index_decidim_elections_results_on_result_type"
   end
 
   create_table "decidim_elections_trustees", force: :cascade do |t|
@@ -912,6 +920,7 @@ ActiveRecord::Schema.define(version: 2021_05_12_145615) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "max_characters", default: 0
+    t.datetime "published_at"
     t.index ["decidim_questionnaire_id"], name: "index_decidim_forms_questions_on_decidim_questionnaire_id"
     t.index ["position"], name: "index_decidim_forms_questions_on_position"
   end
@@ -1135,6 +1144,13 @@ ActiveRecord::Schema.define(version: 2021_05_12_145615) do
     t.index ["decidim_author_id"], name: "index_decidim_meetings_meetings_on_decidim_author_id"
     t.index ["decidim_component_id"], name: "index_decidim_meetings_meetings_on_decidim_component_id"
     t.index ["decidim_scope_id"], name: "index_decidim_meetings_meetings_on_decidim_scope_id"
+  end
+
+  create_table "decidim_meetings_polls", force: :cascade do |t|
+    t.bigint "decidim_meeting_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["decidim_meeting_id"], name: "index_decidim_meetings_polls_on_decidim_meeting_id"
   end
 
   create_table "decidim_meetings_registrations", force: :cascade do |t|
@@ -1927,6 +1943,17 @@ ActiveRecord::Schema.define(version: 2021_05_12_145615) do
     t.integer "presided_polling_station_id"
     t.index ["decidim_user_id"], name: "index_decidim_votings_polling_officers_on_decidim_user_id"
     t.index ["decidim_votings_voting_id"], name: "decidim_votings_votings_polling_officers"
+  end
+
+  create_table "decidim_votings_polling_station_closures", force: :cascade do |t|
+    t.integer "phase"
+    t.string "polling_officer_notes"
+    t.bigint "decidim_elections_election_id", null: false
+    t.bigint "decidim_votings_polling_station_id"
+    t.bigint "decidim_votings_polling_officer_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["phase"], name: "index_decidim_votings_polling_station_closures_on_phase"
   end
 
   create_table "decidim_votings_polling_stations", force: :cascade do |t|
