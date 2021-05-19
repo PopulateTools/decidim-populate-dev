@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 45460bdbe19002b49b4b33679a6839c172d4827a
+  revision: 12b9d97324486ca3231a6b006b69997e0fffddfa
   branch: meetings-staging
   specs:
     decidim (0.25.0.dev)
@@ -500,7 +500,7 @@ GEM
       faraday (>= 1.0)
       faraday_middleware
       graphql-client
-    graphql (1.12.9)
+    graphql (1.12.10)
     graphql-client (0.16.0)
       activesupport (>= 3.0)
       graphql (~> 1.8)

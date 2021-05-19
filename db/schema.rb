@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_14_145719) do
+ActiveRecord::Schema.define(version: 2021_05_19_094157) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1136,10 +1136,9 @@ ActiveRecord::Schema.define(version: 2021_05_14_145719) do
     t.jsonb "registration_email_custom_content"
     t.integer "follows_count", default: 0, null: false
     t.datetime "published_at"
-    t.jsonb "minutes_description"
     t.string "video_url"
     t.string "audio_url"
-    t.boolean "minutes_visible"
+    t.boolean "closing_visible"
     t.index ["decidim_author_id", "decidim_author_type"], name: "index_decidim_meetings_meetings_on_author"
     t.index ["decidim_author_id"], name: "index_decidim_meetings_meetings_on_decidim_author_id"
     t.index ["decidim_component_id"], name: "index_decidim_meetings_meetings_on_decidim_component_id"
