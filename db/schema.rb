@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_20_073503) do
+ActiveRecord::Schema.define(version: 2021_05_26_153403) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1928,6 +1928,19 @@ ActiveRecord::Schema.define(version: 2021_05_20_073503) do
     t.index ["decidim_votings_voting_id"], name: "decidim_votings_voting_census_dataset"
   end
 
+  create_table "decidim_votings_in_person_votes", force: :cascade do |t|
+    t.bigint "decidim_elections_election_id", null: false
+    t.bigint "decidim_votings_polling_station_id"
+    t.bigint "decidim_votings_polling_officer_id"
+    t.string "message_id", null: false
+    t.string "voter_id", null: false
+    t.integer "status", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["decidim_elections_election_id", "decidim_votings_polling_station_id"], name: "decidim_votings_in_person_votes_polling_station_id"
+    t.index ["decidim_elections_election_id", "voter_id"], name: "decidim_votings_in_person_votes_voter_id"
+  end
+
   create_table "decidim_votings_monitoring_committee_members", force: :cascade do |t|
     t.bigint "decidim_votings_voting_id"
     t.bigint "decidim_user_id"
@@ -1956,6 +1969,9 @@ ActiveRecord::Schema.define(version: 2021_05_20_073503) do
     t.bigint "decidim_votings_polling_officer_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "signed_at"
+    t.date "validated_at"
+    t.string "monitoring_committee_notes"
     t.index ["phase"], name: "index_decidim_votings_polling_station_closures_on_phase"
   end
 
