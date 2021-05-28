@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_26_153403) do
+ActiveRecord::Schema.define(version: 2021_05_28_133555) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1085,6 +1085,33 @@ ActiveRecord::Schema.define(version: 2021_05_26_153403) do
     t.index ["decidim_meeting_id"], name: "index_decidim_meetings_agendas_on_decidim_meeting_id"
   end
 
+  create_table "decidim_meetings_answer_choices", force: :cascade do |t|
+    t.bigint "decidim_answer_id"
+    t.bigint "decidim_answer_option_id"
+    t.integer "position"
+    t.jsonb "body"
+    t.text "custom_body"
+    t.index ["decidim_answer_id"], name: "index_decidim_meetings_answer_choices_answer_id"
+    t.index ["decidim_answer_option_id"], name: "index_decidim_meetings_answer_choices_answer_option_id"
+  end
+
+  create_table "decidim_meetings_answer_options", force: :cascade do |t|
+    t.bigint "decidim_question_id"
+    t.jsonb "body"
+    t.index ["decidim_question_id"], name: "index_decidim_meetings_answer_options_question_id"
+  end
+
+  create_table "decidim_meetings_answers", force: :cascade do |t|
+    t.bigint "decidim_user_id"
+    t.bigint "decidim_questionnaire_id"
+    t.bigint "decidim_question_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["decidim_question_id"], name: "index_decidim_meetings_answers_question_id"
+    t.index ["decidim_questionnaire_id"], name: "index_decidim_meetings_answers_on_decidim_questionnaire_id"
+    t.index ["decidim_user_id"], name: "index_decidim_meetings_answers_on_decidim_user_id"
+  end
+
   create_table "decidim_meetings_invites", force: :cascade do |t|
     t.bigint "decidim_user_id", null: false
     t.bigint "decidim_meeting_id", null: false
@@ -1154,6 +1181,27 @@ ActiveRecord::Schema.define(version: 2021_05_26_153403) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["decidim_meeting_id"], name: "index_decidim_meetings_polls_on_decidim_meeting_id"
+  end
+
+  create_table "decidim_meetings_questionnaires", force: :cascade do |t|
+    t.string "questionnaire_for_type"
+    t.bigint "questionnaire_for_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["questionnaire_for_type", "questionnaire_for_id"], name: "index_decidim_meetings_questionnaires_questionnaire_for"
+  end
+
+  create_table "decidim_meetings_questions", force: :cascade do |t|
+    t.bigint "decidim_questionnaire_id"
+    t.integer "position"
+    t.string "question_type"
+    t.jsonb "body"
+    t.integer "max_choices"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "status", default: 0
+    t.index ["decidim_questionnaire_id"], name: "index_decidim_meetings_questions_on_decidim_questionnaire_id"
+    t.index ["position"], name: "index_decidim_meetings_questions_on_position"
   end
 
   create_table "decidim_meetings_registrations", force: :cascade do |t|
@@ -1333,6 +1381,7 @@ ActiveRecord::Schema.define(version: 2021_05_26_153403) do
     t.jsonb "file_upload_settings"
     t.string "machine_translation_display_priority", default: "original", null: false
     t.boolean "enable_participatory_space_filters", default: true
+    t.string "external_domain_whitelist", default: [], array: true
     t.index ["host"], name: "index_decidim_organizations_on_host", unique: true
     t.index ["name"], name: "index_decidim_organizations_on_name", unique: true
   end
