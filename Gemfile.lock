@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 75751fbc2eb9510d3ee518b09222c84c7ce9c061
+  revision: 4dec7a89788c8a78466a06eefd24cbdcad0accaf
   branch: meetings-staging
   specs:
     decidim (0.25.0.dev)
@@ -576,7 +576,8 @@ GEM
     mime-types-data (3.2021.0225)
     mini_magick (4.11.0)
     mini_mime (1.1.0)
-    mini_portile2 (2.5.1)
+    mini_portile2 (2.5.2)
+      net-ftp (~> 0.1)
     minitest (5.14.4)
     mixlib-cli (2.1.8)
     mixlib-config (3.0.9)
@@ -588,6 +589,10 @@ GEM
     multi_xml (0.6.0)
     multipart-post (2.1.1)
     mustache (1.1.1)
+    net-ftp (0.1.2)
+      net-protocol
+      time
+    net-protocol (0.1.0)
     netrc (0.11.0)
     nio4r (2.5.7)
     nobspw (0.6.2)
@@ -762,7 +767,7 @@ GEM
       rubocop-ast (>= 0.5.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
-    rubocop-ast (1.6.0)
+    rubocop-ast (1.7.0)
       parser (>= 3.0.1.1)
     rubocop-faker (1.1.0)
       faker (>= 2.12.0)
@@ -839,6 +844,7 @@ GEM
     thor (1.1.0)
     thread_safe (0.3.6)
     tilt (2.0.10)
+    time (0.1.0)
     tomlrb (2.0.1)
     truncato (0.7.11)
       htmlentities (~> 4.3.1)
