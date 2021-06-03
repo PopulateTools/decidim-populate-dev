@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 3db4689d60ef99cefcb89397a88e1e7d908b0c24
+  revision: 0bed2c1da1fb3d53bdb5151993f9e246f078e7e8
   branch: meetings-staging
   specs:
     decidim (0.25.0.dev)
@@ -591,7 +591,7 @@ GEM
     netrc (0.11.0)
     nio4r (2.5.7)
     nobspw (0.6.2)
-    nokogiri (1.11.6)
+    nokogiri (1.11.7)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     oauth (0.5.6)
