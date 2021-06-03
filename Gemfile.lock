@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 0bed2c1da1fb3d53bdb5151993f9e246f078e7e8
+  revision: 63f76b6525a865c8b52a447ad0dbc725f0ce96d9
   branch: meetings-staging
   specs:
     decidim (0.25.0.dev)
