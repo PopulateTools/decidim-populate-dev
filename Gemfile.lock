@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: bbcc0b31e2e707695ceb6291c54544150e70b279
+  revision: 5372ecc2974e41898582767a719cb502a8ddc475
   branch: meetings-staging
   specs:
     decidim (0.25.0.dev)
@@ -347,7 +347,7 @@ GEM
       actionpack (>= 5.0)
       cells (>= 4.1.6, < 5.0.0)
     charlock_holmes (0.7.7)
-    chef-utils (17.1.35)
+    chef-utils (17.2.29)
       concurrent-ruby
     childprocess (3.0.0)
     coercible (1.0.0)
@@ -403,7 +403,7 @@ GEM
     docile (1.4.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
-    doorkeeper (5.5.1)
+    doorkeeper (5.5.2)
       railties (>= 5)
     doorkeeper-i18n (4.0.1)
     dumb_delegator (1.0.0)
