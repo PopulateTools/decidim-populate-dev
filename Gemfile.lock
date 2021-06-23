@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 9f656b2e6a72cac8fb3e0fd1bd4121c0459c3d18
+  revision: 75df560dd2459c289bfbff7c6fa2c9775aadd9f1
   branch: meetings-staging
   specs:
     decidim (0.25.0.dev)
@@ -390,8 +390,8 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
-    devise-i18n (1.9.4)
-      devise (>= 4.7.1)
+    devise-i18n (1.10.0)
+      devise (>= 4.8.0)
     devise_invitable (2.0.5)
       actionmailer (>= 5.0)
       devise (>= 4.6)
