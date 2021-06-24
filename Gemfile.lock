@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 75df560dd2459c289bfbff7c6fa2c9775aadd9f1
+  revision: ed03ead1e7a13c2240b0402f90f7076e190639d6
   branch: meetings-staging
   specs:
     decidim (0.25.0.dev)
@@ -286,7 +286,7 @@ GEM
     ast (2.4.2)
     autoprefixer-rails (8.6.5)
       execjs
-    axe-core-api (4.2.0)
+    axe-core-api (4.2.1)
       capybara
       dumb_delegator
       selenium-webdriver
