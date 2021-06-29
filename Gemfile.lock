@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: ed03ead1e7a13c2240b0402f90f7076e190639d6
+  revision: b5ea8a13dce9b5dd19f349052feb2dda90f36b87
   branch: meetings-staging
   specs:
     decidim (0.25.0.dev)
@@ -421,7 +421,7 @@ GEM
     erubi (1.10.0)
     etherpad-lite (0.3.0)
       rest-client (>= 1.6)
-    excon (0.82.0)
+    excon (0.83.0)
     execjs (2.8.1)
     factory_bot (4.11.1)
       activesupport (>= 3.0.0)
@@ -430,7 +430,7 @@ GEM
       railties (>= 3.0.0)
     faker (2.18.0)
       i18n (>= 1.6, < 2)
-    faraday (1.4.2)
+    faraday (1.4.3)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
       faraday-excon (~> 1.1)
