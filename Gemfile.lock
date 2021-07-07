@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: ad8b8d018578a03b81017cbccb596abe16eb8d5d
+  revision: 1474a20d5e2a615b4040202c050ce179deea00c0
   branch: meetings-staging
   specs:
     decidim (0.25.0.dev)
@@ -421,7 +421,7 @@ GEM
     erubi (1.10.0)
     etherpad-lite (0.3.0)
       rest-client (>= 1.6)
-    excon (0.83.0)
+    excon (0.84.0)
     execjs (2.8.1)
     factory_bot (4.11.1)
       activesupport (>= 3.0.0)
