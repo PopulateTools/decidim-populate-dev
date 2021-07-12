@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 644be7e3380fd689e02a69e7c416f6cc1551f4b7
+  revision: dc7702b47c59ffaca282cb109f965ec2044e130e
   branch: meetings-staging
   specs:
     decidim (0.25.0.dev)
@@ -438,7 +438,7 @@ GEM
     faraday-excon (1.1.0)
     faraday-httpclient (1.0.1)
     faraday-net_http (1.0.1)
-    faraday-net_http_persistent (1.1.0)
+    faraday-net_http_persistent (1.2.0)
     faraday-patron (1.0.0)
     faraday_middleware (1.0.0)
       faraday (~> 1.0)
