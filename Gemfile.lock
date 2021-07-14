@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: e0c76958af29848230e619b2e9c18e38a0698d59
+  revision: f11e5afdcd0ccb18a6d09b90c1a69970e5149ca0
   branch: meetings-staging
   specs:
     decidim (0.25.0.dev)
@@ -729,7 +729,7 @@ GEM
       rubocop-ast (>= 0.5.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
-    rubocop-ast (1.7.0)
+    rubocop-ast (1.8.0)
       parser (>= 3.0.1.1)
     rubocop-faker (1.1.0)
       faker (>= 2.12.0)
