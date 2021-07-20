@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: f11e5afdcd0ccb18a6d09b90c1a69970e5149ca0
+  revision: 16205bfe5d0f2bd829b13824e569354257cc167e
   branch: meetings-staging
   specs:
     decidim (0.25.0.dev)
@@ -414,7 +414,7 @@ GEM
     erubi (1.10.0)
     etherpad-lite (0.3.0)
       rest-client (>= 1.6)
-    excon (0.84.0)
+    excon (0.85.0)
     execjs (2.8.1)
     factory_bot (4.11.1)
       activesupport (>= 3.0.0)
@@ -452,7 +452,7 @@ GEM
       excon (~> 0.71)
       formatador (~> 0.2)
       mime-types
-    fog-local (0.6.0)
+    fog-local (0.7.0)
       fog-core (>= 1.27, < 3.0)
     formatador (0.3.0)
     geocoder (1.6.7)
@@ -743,7 +743,7 @@ GEM
     ruby-progressbar (1.11.0)
     ruby-vips (2.1.2)
       ffi (~> 1.12)
-    ruby2_keywords (0.0.4)
+    ruby2_keywords (0.0.5)
     rubyXL (3.4.17)
       nokogiri (>= 1.10.8)
       rubyzip (>= 1.3.0)
