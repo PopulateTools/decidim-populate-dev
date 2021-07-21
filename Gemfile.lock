@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 16205bfe5d0f2bd829b13824e569354257cc167e
+  revision: 7cebb1e92e0c1b9b064beadecb7c589d1c8ccee0
   branch: meetings-staging
   specs:
     decidim (0.25.0.dev)
@@ -111,7 +111,7 @@ GIT
       social-share-button (~> 1.2, >= 1.2.1)
       truncato (~> 0.7)
       valid_email2 (~> 2.1)
-      webpacker (~> 6.0.0.beta.7)
+      webpacker (~> 6.0.0.beta.7, < 6.0.0.c)
       wisper (~> 2.0)
     decidim-debates (0.25.0.dev)
       decidim-comments (= 0.25.0.dev)
@@ -521,7 +521,7 @@ GEM
       actionmailer (>= 3.2)
       letter_opener (~> 1.0)
       railties (>= 3.2)
-    listen (3.5.1)
+    listen (3.6.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.3.1)
