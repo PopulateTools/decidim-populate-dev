@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 0ac2dd815f95bdad68ccc4e6721c729e7656fa97
+  revision: 7088955e631332f1f869c033d7bf3ebad1fa9f0a
   branch: meetings-staging
   specs:
     decidim (0.25.0.dev)
@@ -304,7 +304,7 @@ GEM
       parser (>= 2.4)
       smart_properties
     bindex (0.8.1)
-    bootsnap (1.7.5)
+    bootsnap (1.7.6)
       msgpack (~> 1.0)
     browser (2.7.1)
     builder (3.2.4)
