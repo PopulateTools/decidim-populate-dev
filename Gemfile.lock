@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 7cebb1e92e0c1b9b064beadecb7c589d1c8ccee0
+  revision: 9f654e43c982165915da86cebc1236e84a0eb3b6
   branch: meetings-staging
   specs:
     decidim (0.25.0.dev)
@@ -340,7 +340,7 @@ GEM
       actionpack (>= 5.0)
       cells (>= 4.1.6, < 5.0.0)
     charlock_holmes (0.7.7)
-    chef-utils (17.2.29)
+    chef-utils (17.3.48)
       concurrent-ruby
     childprocess (3.0.0)
     coercible (1.0.0)
@@ -462,7 +462,7 @@ GEM
       faraday (>= 1.0)
       faraday_middleware
       graphql-client
-    graphql (1.12.13)
+    graphql (1.12.14)
     graphql-client (0.16.0)
       activesupport (>= 3.0)
       graphql (~> 1.8)
