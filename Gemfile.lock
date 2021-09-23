@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: d155d3df1f8cc121f7dc2d4aaa4482f488436c18
+  revision: e06f5dbf3456fca238060848f700ff2f2656269a
   branch: meetings-staging
   specs:
     decidim (0.26.0.dev)
@@ -279,7 +279,7 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     anchored (1.1.0)
     ast (2.4.2)
-    axe-core-api (4.3.0)
+    axe-core-api (4.3.1)
       dumb_delegator
       virtus
     axe-core-rspec (4.1.0)
@@ -393,7 +393,7 @@ GEM
     docile (1.4.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
-    doorkeeper (5.5.2)
+    doorkeeper (5.5.3)
       railties (>= 5)
     doorkeeper-i18n (4.0.1)
     dumb_delegator (1.0.0)
