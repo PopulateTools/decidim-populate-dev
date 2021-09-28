@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: e06f5dbf3456fca238060848f700ff2f2656269a
+  revision: 5858c6e0816f5f3ec82fc0d052dc236850f9151a
   branch: meetings-staging
   specs:
     decidim (0.26.0.dev)
@@ -337,7 +337,7 @@ GEM
       actionpack (>= 5.0)
       cells (>= 4.1.6, < 5.0.0)
     charlock_holmes (0.7.7)
-    chef-utils (17.4.38)
+    chef-utils (17.5.22)
       concurrent-ruby
     childprocess (3.0.0)
     coercible (1.0.0)
@@ -728,7 +728,7 @@ GEM
       rubocop-ast (>= 0.5.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
-    rubocop-ast (1.11.0)
+    rubocop-ast (1.12.0)
       parser (>= 3.0.1.1)
     rubocop-faker (1.1.0)
       faker (>= 2.12.0)
