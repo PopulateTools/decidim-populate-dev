@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 7a5489c8047015c8e3071631a8e7fa8736d39d0b
+  revision: 6f8e8fe1f1b5c954e3c27ca7335c1f6aa9e30e94
   branch: meetings-staging
   specs:
     decidim (0.26.0.dev)
@@ -462,7 +462,7 @@ GEM
       faraday (>= 1.0)
       faraday_middleware
       graphql-client
-    graphql (1.12.17)
+    graphql (1.12.18)
     graphql-client (0.17.0)
       activesupport (>= 3.0)
       graphql (~> 1.10)
@@ -474,7 +474,7 @@ GEM
     http-accept (1.7.0)
     http-cookie (1.0.4)
       domain_name (~> 0.5)
-    i18n (1.8.10)
+    i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     i18n-tasks (0.9.34)
       activesupport (>= 4.0.2)
@@ -582,7 +582,7 @@ GEM
     omniauth-oauth (1.2.0)
       oauth
       omniauth (>= 1.0, < 3)
-    omniauth-oauth2 (1.7.1)
+    omniauth-oauth2 (1.7.2)
       oauth2 (~> 1.4)
       omniauth (>= 1.9, < 3)
     omniauth-rails_csrf_protection (0.1.2)
@@ -718,7 +718,7 @@ GEM
       rspec-support (~> 3.10)
     rspec-retry (0.6.2)
       rspec-core (> 3.3)
-    rspec-support (3.10.2)
+    rspec-support (3.10.3)
     rspec_junit_formatter (0.3.0)
       rspec-core (>= 2, < 4, != 2.12.0)
     rubocop (0.92.0)
