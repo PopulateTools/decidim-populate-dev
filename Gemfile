@@ -26,7 +26,7 @@ gem 'webpacker', '~> 6.0.0.rc.5'
 gem 'declarative-option', '0.1.0'
 
 gem 'letter_opener_web', '~> 1.3'
-gem 'sidekiq', '~> 5.2'
+gem 'sidekiq'
 
 group :development, :test do
   gem 'decidim-dev', git: REPO, branch: BRANCH
