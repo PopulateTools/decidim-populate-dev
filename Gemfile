@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 ruby RUBY_VERSION
 REPO = 'https://github.com/PopulateTools/decidim.git'
-BRANCH = 'meetings-staging'
+BRANCH = 'pwa-staging'
 
 gem 'decidim', git: REPO, branch: BRANCH
 gem 'decidim-conferences', git: REPO, branch: BRANCH
