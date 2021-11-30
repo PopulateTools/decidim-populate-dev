@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 5e0285ad27ce0b587f569fff83a59a31c76d8964
+  revision: 45e554155a7347de6142e81e3421d832bf8ff208
   branch: pwa-staging
   specs:
     decidim (0.26.0.dev)
@@ -386,8 +386,8 @@ GEM
       devise (>= 4.6)
     diff-lcs (1.4.4)
     diffy (3.4.0)
-    doc2text (0.4.3)
-      nokogiri (~> 1.11.1)
+    doc2text (0.4.4)
+      nokogiri (>= 1.12.5, < 1.13.0)
       rubyzip (~> 2.3.0)
     docile (1.4.0)
     domain_name (0.5.20190701)
@@ -454,7 +454,7 @@ GEM
       fog-core (>= 1.27, < 3.0)
     formatador (0.3.0)
     geocoder (1.7.0)
-    globalid (0.6.0)
+    globalid (1.0.0)
       activesupport (>= 5.0)
     graphlient (0.4.0)
       faraday (>= 1.0)
@@ -542,7 +542,7 @@ GEM
     mime-types-data (3.2021.1115)
     mini_magick (4.11.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.5.3)
+    mini_portile2 (2.6.1)
     minitest (5.14.4)
     mixlib-cli (2.1.8)
     mixlib-config (3.0.9)
@@ -557,8 +557,8 @@ GEM
     netrc (0.11.0)
     nio4r (2.5.8)
     nobspw (0.6.2)
-    nokogiri (1.11.7)
-      mini_portile2 (~> 2.5.0)
+    nokogiri (1.12.5)
+      mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
     oauth (0.5.8)
     oauth2 (1.4.7)
@@ -597,7 +597,7 @@ GEM
       activerecord (>= 4.2)
       request_store (~> 1.1)
     parallel (1.21.0)
-    parser (3.0.2.0)
+    parser (3.0.3.1)
       ast (~> 2.4.1)
     pg (1.1.4)
     pg_search (2.3.5)
