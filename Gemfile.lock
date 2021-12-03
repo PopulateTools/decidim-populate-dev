@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 45e554155a7347de6142e81e3421d832bf8ff208
+  revision: abb799bc21e2d84fc3784b65db633b95b24cdad8
   branch: pwa-staging
   specs:
     decidim (0.26.0.dev)
@@ -336,7 +336,7 @@ GEM
       actionpack (>= 5.0)
       cells (>= 4.1.6, < 5.0.0)
     charlock_holmes (0.7.7)
-    chef-utils (17.7.29)
+    chef-utils (17.8.25)
       concurrent-ruby
     childprocess (3.0.0)
     coercible (1.0.0)
@@ -729,7 +729,7 @@ GEM
       rubocop-ast (>= 0.5.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
-    rubocop-ast (1.13.0)
+    rubocop-ast (1.14.0)
       parser (>= 3.0.1.1)
     rubocop-faker (1.1.0)
       faker (>= 2.12.0)
