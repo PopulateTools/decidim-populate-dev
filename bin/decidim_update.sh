@@ -4,11 +4,12 @@
 trap "echo; exit 1" INT TERM
 
 function log() {
-  echo
-  echo "=================================================="
-  echo $1
-  echo "=================================================="
-  echo
+  local columns=$(tput cols)
+  local text="$1"
+
+  printf '=%.0s' $(seq 1 ${columns})
+  printf "%*s\n" $(((${#text}+$columns)/2)) "$text"
+  printf '=%.0s' $(seq 1 ${columns})
 }
 
 log "Updating decidim" && bundle update
