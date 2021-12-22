@@ -12,10 +12,7 @@ function log() {
   printf '=%.0s' $(seq 1 ${columns})
 }
 
-# root path project
-__root="$(cd "$(dirname "$(dirname "${BASH_SOURCE[0]}")")" && pwd)"
-
 log "Updating decidim" && bundle update
-log "Updating decidim webpacker config" && "${__root}/bin/rails" decidim:webpacker:install
-log "Installing decidim new migrations" && "${__root}/bin/rails" decidim:choose_target_plugins && "${__root}/bin/rails" railties:install:migrations
-log "Updating application" && "${__root}/bin/update"
+log "Updating decidim webpacker config" && bin/rails decidim:webpacker:install
+log "Installing decidim new migrations" && bin/rails decidim:choose_target_plugins && bin/rails railties:install:migrations
+log "Updating application" && bin/update
