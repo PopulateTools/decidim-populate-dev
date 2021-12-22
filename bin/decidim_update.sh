@@ -16,6 +16,6 @@ function log() {
 __root="$(cd "$(dirname "$(dirname "${BASH_SOURCE[0]}")")" && pwd)"
 
 log "Updating decidim" && bundle update
-log "Updating decidim webpacker config" && bundle exec rails decidim:webpacker:install
-log "Installing decidim new migrations" && bundle exec rails decidim:choose_target_plugins && bundle exec rails railties:install:migrations
+log "Updating decidim webpacker config" && "${__root}/bin/rails" decidim:webpacker:install
+log "Installing decidim new migrations" && "${__root}/bin/rails" decidim:choose_target_plugins && "${__root}/bin/rails" railties:install:migrations
 log "Updating application" && "${__root}/bin/update"
