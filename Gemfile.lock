@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: e1acf60d6c9522f8985a386fe9940c87a65595af
+  revision: a01cdb3958edfcd483d7193bc4da869539061ac9
   branch: pwa-staging
   specs:
     decidim (0.26.0.dev)
@@ -334,7 +334,7 @@ GEM
       actionpack (>= 5.0)
       cells (>= 4.1.6, < 5.0.0)
     charlock_holmes (0.7.7)
-    chef-utils (17.8.25)
+    chef-utils (17.9.18)
       concurrent-ruby
     childprocess (3.0.0)
     coercible (1.0.0)
@@ -382,7 +382,7 @@ GEM
     devise_invitable (2.0.6)
       actionmailer (>= 5.0)
       devise (>= 4.6)
-    diff-lcs (1.4.4)
+    diff-lcs (1.5.0)
     diffy (3.4.0)
     doc2text (0.4.4)
       nokogiri (>= 1.12.5, < 1.13.0)
