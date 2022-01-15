@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_23_151004) do
+ActiveRecord::Schema.define(version: 2022_01_14_113009) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1220,7 +1220,7 @@ ActiveRecord::Schema.define(version: 2021_12_23_151004) do
     t.string "registration_type", default: "registration_disabled", null: false
     t.string "registration_url"
     t.string "salt"
-    t.boolean "customize_registration_email", default: false, null: false
+    t.boolean "customize_registration_email", default: false
     t.jsonb "registration_email_custom_content"
     t.integer "follows_count", default: 0, null: false
     t.datetime "published_at"
