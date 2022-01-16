@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: d63e8be9f9b81d2246142c533c2a629b1f8e3196
+  revision: 9477f717ad1b8430ccc49a9cf5a9513fccc7714d
   branch: pwa-staging
   specs:
     decidim (0.27.0.dev)
@@ -301,7 +301,7 @@ GEM
       msgpack (~> 1.0)
     browser (2.7.1)
     builder (3.2.4)
-    bullet (7.0.0)
+    bullet (7.0.1)
       activesupport (>= 3.0.0)
       uniform_notifier (~> 1.11)
     byebug (11.1.3)
