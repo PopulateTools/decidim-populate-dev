@@ -20,3 +20,4 @@ user.save!
 6. Fill the rest of the form and submit it.
 
 You're good to go!
+
