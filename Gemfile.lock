@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 5fcf5f34bb1eb26e40b4ab5fdf4d73308f0ea196
+  revision: fcab806367606f0b54f4a5f2c09337d3627d24c3
   branch: pwa-staging
   specs:
     decidim (0.27.0.dev)
@@ -559,7 +559,7 @@ GEM
       tomlrb
     mixlib-shellout (3.2.5)
       chef-utils
-    msgpack (1.4.2)
+    msgpack (1.4.3)
     multi_json (1.15.0)
     multi_xml (0.6.0)
     multipart-post (2.1.1)
