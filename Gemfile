@@ -28,6 +28,9 @@ gem 'declarative-option', '0.1.0'
 gem 'letter_opener_web', '~> 1.3'
 gem 'sidekiq'
 
+# Performance
+gem "appsignal", "= 3.0.6"
+
 group :development, :test do
   gem 'decidim-dev', git: REPO, branch: BRANCH
 
