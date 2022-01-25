@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_14_113009) do
+ActiveRecord::Schema.define(version: 2022_01_25_092734) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -370,7 +370,7 @@ ActiveRecord::Schema.define(version: 2022_01_14_113009) do
 
   create_table "decidim_categories", id: :serial, force: :cascade do |t|
     t.jsonb "name", null: false
-    t.jsonb "description", null: false
+    t.jsonb "description"
     t.integer "parent_id"
     t.integer "decidim_participatory_space_id"
     t.string "decidim_participatory_space_type"
@@ -1693,6 +1693,34 @@ ActiveRecord::Schema.define(version: 2022_01_14_113009) do
     t.index ["valuator_role_type", "valuator_role_id"], name: "decidim_proposals_valuation_assignment_valuator_role"
   end
 
+  create_table "decidim_reminder_deliveries", force: :cascade do |t|
+    t.bigint "decidim_reminder_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["decidim_reminder_id"], name: "index_decidim_reminder_deliveries_on_decidim_reminder_id"
+  end
+
+  create_table "decidim_reminder_records", force: :cascade do |t|
+    t.string "state", default: "active"
+    t.string "string", default: "active"
+    t.bigint "decidim_reminder_id"
+    t.string "remindable_type", null: false
+    t.bigint "remindable_id", null: false
+    t.index ["decidim_reminder_id"], name: "index_decidim_reminder_records_on_decidim_reminder_id"
+    t.index ["remindable_type", "remindable_id"], name: "index_decidim_reminder_records_remindable"
+    t.index ["state"], name: "index_decidim_reminder_records_on_state"
+    t.index ["string"], name: "index_decidim_reminder_records_on_string"
+  end
+
+  create_table "decidim_reminders", force: :cascade do |t|
+    t.bigint "decidim_user_id", null: false
+    t.bigint "decidim_component_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["decidim_component_id"], name: "index_decidim_reminders_on_decidim_component_id"
+    t.index ["decidim_user_id"], name: "index_decidim_reminders_on_decidim_user_id"
+  end
+
   create_table "decidim_reports", id: :serial, force: :cascade do |t|
     t.integer "decidim_moderation_id", null: false
     t.integer "decidim_user_id", null: false
@@ -1969,6 +1997,7 @@ ActiveRecord::Schema.define(version: 2022_01_14_113009) do
     t.datetime "officialized_at"
     t.jsonb "officialized_as"
     t.datetime "admin_terms_accepted_at"
+    t.boolean "allow_push_notifications", default: false
     t.index ["confirmation_token"], name: "index_decidim_users_on_confirmation_token", unique: true
     t.index ["decidim_organization_id"], name: "index_decidim_users_on_decidim_organization_id"
     t.index ["email", "decidim_organization_id"], name: "index_decidim_users_on_email_and_decidim_organization_id", unique: true, where: "((deleted_at IS NULL) AND (managed = false) AND ((type)::text = 'Decidim::User'::text))"
@@ -2220,6 +2249,10 @@ ActiveRecord::Schema.define(version: 2022_01_14_113009) do
   add_foreign_key "decidim_participatory_processes", "decidim_organizations"
   add_foreign_key "decidim_participatory_processes", "decidim_participatory_process_types"
   add_foreign_key "decidim_participatory_processes", "decidim_scope_types"
+  add_foreign_key "decidim_reminder_deliveries", "decidim_reminders"
+  add_foreign_key "decidim_reminder_records", "decidim_reminders"
+  add_foreign_key "decidim_reminders", "decidim_components"
+  add_foreign_key "decidim_reminders", "decidim_users"
   add_foreign_key "decidim_scope_types", "decidim_organizations"
   add_foreign_key "decidim_scopes", "decidim_organizations"
   add_foreign_key "decidim_scopes", "decidim_scope_types", column: "scope_type_id"
