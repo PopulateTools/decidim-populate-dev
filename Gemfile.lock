@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 824fc9921183cec61570391e61e92aa9c55e7d31
+  revision: 3646caaeac30626c187afa888c57236f9a58ed74
   branch: pwa-staging
   specs:
     decidim (0.27.0.dev)
@@ -623,7 +623,7 @@ GEM
       actionmailer (>= 3)
       premailer (~> 1.7, >= 1.7.9)
     public_suffix (4.0.6)
-    puma (5.5.2)
+    puma (5.6.0)
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
