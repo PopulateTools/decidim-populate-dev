@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_25_011941) do
+ActiveRecord::Schema.define(version: 2022_02_08_100455) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1389,6 +1389,16 @@ ActiveRecord::Schema.define(version: 2022_01_25_011941) do
     t.index ["decidim_user_id"], name: "index_decidim_notifications_on_decidim_user_id"
   end
 
+  create_table "decidim_notifications_subscriptions", force: :cascade do |t|
+    t.bigint "decidim_user_id", null: false
+    t.string "endpoint"
+    t.string "p256dh"
+    t.string "auth"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["decidim_user_id"], name: "index_decidim_notifications_subscriptions_on_decidim_user_id"
+  end
+
   create_table "decidim_organizations", id: :serial, force: :cascade do |t|
     t.string "name", null: false
     t.string "host", null: false
@@ -2244,6 +2254,7 @@ ActiveRecord::Schema.define(version: 2022_01_25_011941) do
   add_foreign_key "decidim_elections_trustees", "decidim_organizations"
   add_foreign_key "decidim_identities", "decidim_organizations"
   add_foreign_key "decidim_newsletters", "decidim_users", column: "author_id"
+  add_foreign_key "decidim_notifications_subscriptions", "decidim_users"
   add_foreign_key "decidim_participatory_process_steps", "decidim_participatory_processes"
   add_foreign_key "decidim_participatory_process_types", "decidim_organizations"
   add_foreign_key "decidim_participatory_processes", "decidim_organizations"
