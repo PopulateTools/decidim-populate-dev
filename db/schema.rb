@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_25_011941) do
+ActiveRecord::Schema.define(version: 2022_02_10_152918) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -429,9 +429,9 @@ ActiveRecord::Schema.define(version: 2022_01_25_011941) do
     t.string "decidim_author_type", null: false
     t.jsonb "body"
     t.integer "comments_count", default: 0, null: false
-    t.datetime "deleted_at"
     t.string "decidim_participatory_space_type"
     t.integer "decidim_participatory_space_id"
+    t.datetime "deleted_at"
     t.index ["created_at"], name: "index_decidim_comments_comments_on_created_at"
     t.index ["decidim_author_id", "decidim_author_type"], name: "index_decidim_comments_comments_on_decidim_author"
     t.index ["decidim_author_id"], name: "decidim_comments_comment_author"
@@ -763,8 +763,8 @@ ActiveRecord::Schema.define(version: 2022_01_25_011941) do
     t.bigint "decidim_organization_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["decidim_author_id"], name: "decidim_awesome_editor_images_author"
-    t.index ["decidim_organization_id"], name: "decidim_awesome_editor_images_constraint_organization"
+    t.index ["decidim_author_id"], name: "decidim_editor_images_author"
+    t.index ["decidim_organization_id"], name: "decidim_editor_images_constraint_organization"
   end
 
   create_table "decidim_elections_actions", force: :cascade do |t|
@@ -981,7 +981,6 @@ ActiveRecord::Schema.define(version: 2022_01_25_011941) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "max_characters", default: 0
-    t.datetime "published_at"
     t.index ["decidim_questionnaire_id"], name: "index_decidim_forms_questions_on_decidim_questionnaire_id"
     t.index ["position"], name: "index_decidim_forms_questions_on_position"
   end
@@ -1230,10 +1229,9 @@ ActiveRecord::Schema.define(version: 2022_01_25_011941) do
     t.boolean "comments_enabled", default: true
     t.datetime "comments_start_time"
     t.datetime "comments_end_time"
-    t.boolean "show_iframe", default: false
+    t.string "state"
     t.integer "iframe_access_level", default: 0
     t.integer "iframe_embed_type", default: 0
-    t.string "state"
     t.index ["decidim_author_id", "decidim_author_type"], name: "index_decidim_meetings_meetings_on_author"
     t.index ["decidim_author_id"], name: "index_decidim_meetings_meetings_on_decidim_author_id"
     t.index ["decidim_component_id"], name: "index_decidim_meetings_meetings_on_decidim_component_id"
@@ -1389,6 +1387,16 @@ ActiveRecord::Schema.define(version: 2022_01_25_011941) do
     t.index ["decidim_user_id"], name: "index_decidim_notifications_on_decidim_user_id"
   end
 
+  create_table "decidim_notifications_subscriptions", force: :cascade do |t|
+    t.bigint "decidim_user_id", null: false
+    t.string "endpoint"
+    t.string "p256dh"
+    t.string "auth"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["decidim_user_id"], name: "index_decidim_notifications_subscriptions_on_decidim_user_id"
+  end
+
   create_table "decidim_organizations", id: :serial, force: :cascade do |t|
     t.string "name", null: false
     t.string "host", null: false
@@ -1444,8 +1452,8 @@ ActiveRecord::Schema.define(version: 2022_01_25_011941) do
     t.integer "comments_max_length", default: 1000
     t.jsonb "file_upload_settings"
     t.string "machine_translation_display_priority", default: "original", null: false
-    t.boolean "enable_participatory_space_filters", default: true
     t.string "external_domain_whitelist", default: [], array: true
+    t.boolean "enable_participatory_space_filters", default: true
     t.index ["host"], name: "index_decidim_organizations_on_host", unique: true
     t.index ["name"], name: "index_decidim_organizations_on_name", unique: true
   end
@@ -1994,10 +2002,10 @@ ActiveRecord::Schema.define(version: 2022_01_25_011941) do
     t.integer "block_id"
     t.boolean "email_on_moderations", default: true
     t.integer "follows_count", default: 0, null: false
+    t.boolean "allow_push_notifications", default: false
     t.datetime "officialized_at"
     t.jsonb "officialized_as"
     t.datetime "admin_terms_accepted_at"
-    t.boolean "allow_push_notifications", default: false
     t.index ["confirmation_token"], name: "index_decidim_users_on_confirmation_token", unique: true
     t.index ["decidim_organization_id"], name: "index_decidim_users_on_decidim_organization_id"
     t.index ["email", "decidim_organization_id"], name: "index_decidim_users_on_email_and_decidim_organization_id", unique: true, where: "((deleted_at IS NULL) AND (managed = false) AND ((type)::text = 'Decidim::User'::text))"
@@ -2244,6 +2252,7 @@ ActiveRecord::Schema.define(version: 2022_01_25_011941) do
   add_foreign_key "decidim_elections_trustees", "decidim_organizations"
   add_foreign_key "decidim_identities", "decidim_organizations"
   add_foreign_key "decidim_newsletters", "decidim_users", column: "author_id"
+  add_foreign_key "decidim_notifications_subscriptions", "decidim_users"
   add_foreign_key "decidim_participatory_process_steps", "decidim_participatory_processes"
   add_foreign_key "decidim_participatory_process_types", "decidim_organizations"
   add_foreign_key "decidim_participatory_processes", "decidim_organizations"
