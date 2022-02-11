@@ -35,11 +35,12 @@ Decidim.configure do |config|
   # Map and Geocoder configuration
   #
   # == HERE Maps ==
-  # config.maps = {
-  #   provider: :here,
-  #   api_key: Rails.application.secrets.maps[:api_key],
-  #   static: { url: "https://image.maps.ls.hereapi.com/mia/1.6/mapview" }
-  # }
+  config.maps = {
+    provider: :here,
+    api_key: Rails.application.secrets.maps[:api_key],
+    static: { url: "https://image.maps.ls.hereapi.com/mia/1.6/mapview" }
+  }
+
   #
   # == OpenStreetMap (OSM) services ==
   # To use the OSM map service providers, you will need a service provider for
@@ -137,10 +138,10 @@ Decidim.configure do |config|
   # config.data_portability_expiry_time = 7.days
 
   # Max requests in a time period to prevent DoS attacks. Only applied on production.
-  # config.throttling_max_requests = 100
+  config.throttling_max_requests = 1000
 
   # Time window in which the throttling is applied.
-  # config.throttling_period = 1.minute
+  config.throttling_period = 1.minute
 
   # Time window were users can access the website even if their email is not confirmed.
   # config.unconfirmed_access_for = 2.days
@@ -174,7 +175,7 @@ Decidim.configure do |config|
   #   end
   # end
   #
-  config.sms_gateway_service = 'Decidim::Verifications::Sms::ExampleGateway'
+  # config.sms_gateway_service = 'Decidim::Verifications::Sms::ExampleGateway'
 
   # Timestamp service configuration
   #
@@ -198,7 +199,7 @@ Decidim.configure do |config|
   #   end
   # end
   #
-  config.timestamp_service = "Decidim::Initiatives::DummyTimestamp"
+  # config.timestamp_service = "Decidim::Initiatives::DummyTimestamp"
 
   # PDF signature service configuration
   #
@@ -221,7 +222,7 @@ Decidim.configure do |config|
   #   end
   # end
   #
-  config.pdf_signature_service = "Decidim::Initiatives::PdfSignatureExample"
+  # config.pdf_signature_service = "Decidim::Initiatives::PdfSignatureExample"
 
   # Etherpad configuration
   #
