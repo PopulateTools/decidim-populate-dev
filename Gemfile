@@ -24,6 +24,8 @@ gem 'declarative-option', '0.1.0'
 
 gem 'sidekiq'
 
+gem 'letter_opener_web', '~> 1.3'
+
 # Performance
 gem "appsignal", "= 3.0.6"
 
@@ -44,10 +46,6 @@ group :development do
   gem 'spring', '~> 2.0'
   gem 'spring-watcher-listen', '~> 2.0'
   gem 'web-console', '4.0.4'
-  gem 'letter_opener_web', '~> 1.3'
-end
-
-group :development do
   # Profiling gems
   gem 'bullet'
   gem 'flamegraph'
