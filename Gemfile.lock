@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: cd04d7add62b94ca1933437f9a3e330d9dc6dff0
+  revision: 10d3741b1aadd69443a715c001b7636145f4d6ab
   branch: pwa-staging
   specs:
     decidim (0.27.0.dev)
@@ -109,6 +109,7 @@ GIT
       social-share-button (~> 1.2, >= 1.2.1)
       valid_email2 (~> 2.1)
       webpacker (= 6.0.0.rc.5)
+      webpush (~> 1.1)
       wisper (~> 2.0)
     decidim-debates (0.27.0.dev)
       decidim-comments (= 0.27.0.dev)
@@ -141,7 +142,6 @@ GIT
       system_test_html_screenshots (~> 0.2)
       w3c_rspec_validators (~> 0.3.0)
       webmock (~> 3.6)
-      webpush (~> 1.1)
       wisper-rspec (~> 1.0)
     decidim-elections (0.27.0.dev)
       decidim-bulletin_board (= 0.22.3)
