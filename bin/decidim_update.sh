@@ -12,7 +12,7 @@ function log() {
   printf '=%.0s' $(seq 1 ${columns})
 }
 
-log "Updating decidim" && bundle update
+log "Updating decidim" && bundle update decidim
 log "Updating decidim webpacker config" && bin/rails decidim:webpacker:install
 log "Installing decidim new migrations" && bin/rails decidim:choose_target_plugins && bin/rails railties:install:migrations
 log "Updating application" && bin/update
