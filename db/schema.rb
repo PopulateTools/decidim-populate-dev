@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_10_152918) do
+ActiveRecord::Schema.define(version: 2022_03_01_142239) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -2006,6 +2006,8 @@ ActiveRecord::Schema.define(version: 2022_02_10_152918) do
     t.datetime "officialized_at"
     t.jsonb "officialized_as"
     t.datetime "admin_terms_accepted_at"
+    t.string "notifications_sending_frequency", default: "daily"
+    t.datetime "digest_sent_at"
     t.index ["confirmation_token"], name: "index_decidim_users_on_confirmation_token", unique: true
     t.index ["decidim_organization_id"], name: "index_decidim_users_on_decidim_organization_id"
     t.index ["email", "decidim_organization_id"], name: "index_decidim_users_on_email_and_decidim_organization_id", unique: true, where: "((deleted_at IS NULL) AND (managed = false) AND ((type)::text = 'Decidim::User'::text))"
