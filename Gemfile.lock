@@ -551,6 +551,7 @@ GEM
     mime-types-data (3.2022.0105)
     mini_magick (4.11.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.8.0)
     minitest (5.15.0)
     mixlib-cli (2.1.8)
     mixlib-config (3.0.9)
@@ -563,6 +564,9 @@ GEM
     multipart-post (2.1.1)
     mustache (1.1.1)
     nio4r (2.5.8)
+    nokogiri (1.13.3)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
     nokogiri (1.13.3-arm64-darwin)
       racc (~> 1.4)
     oauth (0.5.8)
@@ -855,6 +859,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  ruby
 
 DEPENDENCIES
   appsignal (= 3.0.6)
