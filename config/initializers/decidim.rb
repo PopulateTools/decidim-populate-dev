@@ -41,6 +41,7 @@ Decidim.configure do |config|
     static: { url: "https://image.maps.ls.hereapi.com/mia/1.6/mapview" }
   }
 
+  #
   # == OpenStreetMap (OSM) services ==
   # To use the OSM map service providers, you will need a service provider for
   # the following map servers or host all of them yourself:
@@ -174,7 +175,7 @@ Decidim.configure do |config|
   #   end
   # end
   #
-  # config.sms_gateway_service = "MySMSGatewayService"
+  # config.sms_gateway_service = 'Decidim::Verifications::Sms::ExampleGateway'
 
   # Timestamp service configuration
   #
@@ -198,7 +199,7 @@ Decidim.configure do |config|
   #   end
   # end
   #
-  # config.timestamp_service = "MyTimestampService"
+  # config.timestamp_service = "Decidim::Initiatives::DummyTimestamp"
 
   # PDF signature service configuration
   #
@@ -221,12 +222,12 @@ Decidim.configure do |config|
   #   end
   # end
   #
-  # config.pdf_signature_service = "MyPDFSignatureService"
+  # config.pdf_signature_service = "Decidim::Initiatives::PdfSignatureExample"
 
   # Etherpad configuration
   #
   # Only needed if you want to have Etherpad integration with Decidim. See
-  # Decidim docs at docs/services/etherpad.md in order to set it up.
+  # Decidim docs at https://docs.decidim.org/en/services/etherpad/ in order to set it up.
   #
   # config.etherpad = {
   #   server: Rails.application.secrets.etherpad[:server],
@@ -251,11 +252,18 @@ Decidim.configure do |config|
 
   # Machine Translation Configuration
   #
+  # See Decidim docs at https://docs.decidim.org/en/develop/machine_translations/
+  # for more information about how it works and how to set it up.
+  #
   # Enable machine translations
   config.enable_machine_translations = false
   #
   # If you want to enable machine translation you can create your own service
   # to interact with third party service to translate the user content.
+  #
+  # If you still want to use "Decidim::Dev::DummyTranslator" as translator placeholder,
+  # add the follwing line at the beginning of this file:
+  # require "decidim/dev/dummy_translator"
   #
   # An example class would be something like:
   #
@@ -273,7 +281,7 @@ Decidim.configure do |config|
   #   end
   # end
   #
-  # config.machine_translation_service = "MyTranslationService"
+  config.machine_translation_service = 'Decidim::Dev::DummyTranslator'
 
   # Defines the name of the cookie used to check if the user allows Decidim to
   # set cookies.
@@ -282,3 +290,6 @@ end
 
 Rails.application.config.i18n.available_locales = Decidim.available_locales
 Rails.application.config.i18n.default_locale = Decidim.default_locale
+
+# Inform Decidim about the assets folder
+Decidim.register_assets_path File.expand_path("app/packs", Rails.application.root)
