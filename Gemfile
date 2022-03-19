@@ -19,9 +19,6 @@ gem "puma", '>= 5.5.1'
 
 gem 'faker', '~> 2.14'
 
-# Forcing this version
-gem 'declarative-option', '0.1.0'
-
 gem 'sidekiq'
 
 gem 'letter_opener_web', '~> 1.3'
@@ -42,14 +39,7 @@ end
 
 group :development do
   gem 'listen', '~> 3.1'
-  gem 'rubocop-faker'
   gem 'spring', '~> 2.0'
   gem 'spring-watcher-listen', '~> 2.0'
   gem 'web-console', '4.0.4'
-  # Profiling gems
-  gem 'bullet'
-  gem 'flamegraph'
-  gem 'memory_profiler'
-  gem 'rack-mini-profiler', require: false
-  gem 'stackprof'
 end
