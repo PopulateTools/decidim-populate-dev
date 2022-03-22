@@ -13,6 +13,7 @@ function log() {
 }
 
 log "Updating decidim" && bundle update decidim
+log "Clear packages" && rm -rf package*
 log "Updating decidim webpacker config" && bin/rails decidim:webpacker:install
 log "Installing decidim new migrations" && bin/rails decidim:choose_target_plugins && bin/rails railties:install:migrations
 log "Updating application" && bin/update
