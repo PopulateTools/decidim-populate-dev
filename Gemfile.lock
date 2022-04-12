@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 795825cf7b0b43eb6e70c1a9a18a721aa92fdf1b
+  revision: 19f0d640b9dbc893c76f40471e8303f01cbf46ea
   branch: pwa-staging
   specs:
     decidim (0.27.0.dev)
@@ -562,7 +562,7 @@ GEM
     multipart-post (2.1.1)
     mustache (1.1.1)
     nio4r (2.5.8)
-    nokogiri (1.13.3)
+    nokogiri (1.13.4)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     oauth (0.5.8)
@@ -617,7 +617,7 @@ GEM
     premailer-rails (1.11.1)
       actionmailer (>= 3)
       premailer (~> 1.7, >= 1.7.9)
-    public_suffix (4.0.6)
+    public_suffix (4.0.7)
     puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -682,7 +682,7 @@ GEM
       wisper (>= 1.6.1)
     redcarpet (3.5.1)
     redis (4.6.0)
-    regexp_parser (2.2.1)
+    regexp_parser (2.3.0)
     request_store (1.5.1)
       rack (>= 1.4)
     responders (3.0.1)
@@ -729,7 +729,7 @@ GEM
       rubocop-ast (>= 0.5.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
-    rubocop-ast (1.16.0)
+    rubocop-ast (1.17.0)
       parser (>= 3.1.1.0)
     rubocop-rails (2.9.1)
       activesupport (>= 4.2.0)
