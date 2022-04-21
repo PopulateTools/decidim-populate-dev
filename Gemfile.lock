@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 49387df3230ed29cf3771adb6262fa811901f286
+  revision: 4dc4fca38ac997097e7ed33f38572985b8b764d3
   branch: pwa-staging
   specs:
     decidim (0.27.0.dev)
