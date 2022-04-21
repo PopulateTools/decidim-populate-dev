@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: be560729b1dcbecbf7c5dca9a56ccb72977bae04
+  revision: 67d97356c34597c6ad7f5ca1a75a486673b8b805
   branch: pwa-staging
   specs:
     decidim (0.27.0.dev)
@@ -99,7 +99,6 @@ GIT
       rails (~> 6.1.0)
       rails-i18n (~> 6.0)
       ransack (~> 2.4.1)
-      rectify (~> 0.13.0)
       redis (~> 4.1)
       request_store (~> 1.5.0)
       rubyXL (~> 3.4)
@@ -385,7 +384,6 @@ GEM
       railties (>= 5)
     doorkeeper-i18n (4.0.1)
     dumb_delegator (1.0.0)
-    equalizer (0.0.11)
     erb_lint (0.0.37)
       activesupport
       better_html (~> 1.0.7)
@@ -674,12 +672,6 @@ GEM
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rectify (0.13.0)
-      activemodel (>= 4.1.0)
-      activerecord (>= 4.1.0)
-      activesupport (>= 4.1.0)
-      virtus (~> 1.0.5)
-      wisper (>= 1.6.1)
     redcarpet (3.5.1)
     redis (4.6.0)
     regexp_parser (2.3.0)
@@ -794,11 +786,10 @@ GEM
     valid_email2 (2.3.1)
       activemodel (>= 3.2)
       mail (~> 2.5)
-    virtus (1.0.5)
+    virtus (2.0.0)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
-      equalizer (~> 0.0, >= 0.0.9)
     voting_schemes-dummy (0.22.3)
       rails (>= 5.0.0)
     voting_schemes-electionguard (0.22.3)
