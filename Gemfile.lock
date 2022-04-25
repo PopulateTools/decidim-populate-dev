@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 8868a819eadce21a905e9d316e86210dbcf37bf1
+  revision: d18eba8ea2baa210fe311664865af7cc4ec3d5cf
   branch: pwa-staging
   specs:
     decidim (0.27.0.dev)
@@ -674,7 +674,7 @@ GEM
       ffi (~> 1.0)
     redcarpet (3.5.1)
     redis (4.6.0)
-    regexp_parser (2.3.0)
+    regexp_parser (2.3.1)
     request_store (1.5.1)
       rack (>= 1.4)
     responders (3.0.1)

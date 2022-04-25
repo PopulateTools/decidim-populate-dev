@@ -1,4 +1,4 @@
-/******/ (function() { // webpackBootstrap
+/******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -6,14 +6,14 @@
 /*!*********************************************!*\
   !*** ./node_modules/idb/build/esm/index.js ***!
   \*********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "deleteDB": function() { return /* binding */ deleteDB; },
-/* harmony export */   "openDB": function() { return /* binding */ openDB; },
-/* harmony export */   "unwrap": function() { return /* reexport safe */ _wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.u; },
-/* harmony export */   "wrap": function() { return /* reexport safe */ _wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.w; }
+/* harmony export */   "deleteDB": () => (/* binding */ deleteDB),
+/* harmony export */   "openDB": () => (/* binding */ openDB),
+/* harmony export */   "unwrap": () => (/* reexport safe */ _wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.u),
+/* harmony export */   "wrap": () => (/* reexport safe */ _wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.w)
 /* harmony export */ });
 /* harmony import */ var _wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./wrap-idb-value.js */ "./node_modules/idb/build/esm/wrap-idb-value.js");
 
@@ -112,15 +112,15 @@ function getMethod(target, prop) {
 /*!******************************************************!*\
   !*** ./node_modules/idb/build/esm/wrap-idb-value.js ***!
   \******************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "a": function() { return /* binding */ reverseTransformCache; },
-/* harmony export */   "i": function() { return /* binding */ instanceOfAny; },
-/* harmony export */   "r": function() { return /* binding */ replaceTraps; },
-/* harmony export */   "u": function() { return /* binding */ unwrap; },
-/* harmony export */   "w": function() { return /* binding */ wrap; }
+/* harmony export */   "a": () => (/* binding */ reverseTransformCache),
+/* harmony export */   "i": () => (/* binding */ instanceOfAny),
+/* harmony export */   "r": () => (/* binding */ replaceTraps),
+/* harmony export */   "u": () => (/* binding */ unwrap),
+/* harmony export */   "w": () => (/* binding */ wrap)
 /* harmony export */ });
 const instanceOfAny = (object, constructors) => constructors.some((c) => object instanceof c);
 
@@ -315,11 +315,11 @@ const unwrap = (value) => reverseTransformCache.get(value);
 /*!**********************************************************************!*\
   !*** ./node_modules/workbox-cacheable-response/CacheableResponse.js ***!
   \**********************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CacheableResponse": function() { return /* binding */ CacheableResponse; }
+/* harmony export */   "CacheableResponse": () => (/* binding */ CacheableResponse)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_assert_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/assert.js */ "./node_modules/workbox-core/_private/assert.js");
 /* harmony import */ var workbox_core_private_WorkboxError_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-core/_private/WorkboxError.js */ "./node_modules/workbox-core/_private/WorkboxError.js");
@@ -454,11 +454,11 @@ class CacheableResponse {
 /*!****************************************************************************!*\
   !*** ./node_modules/workbox-cacheable-response/CacheableResponsePlugin.js ***!
   \****************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CacheableResponsePlugin": function() { return /* binding */ CacheableResponsePlugin; }
+/* harmony export */   "CacheableResponsePlugin": () => (/* binding */ CacheableResponsePlugin)
 /* harmony export */ });
 /* harmony import */ var _CacheableResponse_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CacheableResponse.js */ "./node_modules/workbox-cacheable-response/CacheableResponse.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_version.js */ "./node_modules/workbox-cacheable-response/_version.js");
@@ -519,7 +519,7 @@ class CacheableResponsePlugin {
 /*!*************************************************************!*\
   !*** ./node_modules/workbox-cacheable-response/_version.js ***!
   \*************************************************************/
-/***/ (function() {
+/***/ (() => {
 
 
 // @ts-ignore
@@ -535,12 +535,12 @@ catch (e) { }
 /*!**********************************************************!*\
   !*** ./node_modules/workbox-cacheable-response/index.js ***!
   \**********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CacheableResponse": function() { return /* reexport safe */ _CacheableResponse_js__WEBPACK_IMPORTED_MODULE_0__.CacheableResponse; },
-/* harmony export */   "CacheableResponsePlugin": function() { return /* reexport safe */ _CacheableResponsePlugin_js__WEBPACK_IMPORTED_MODULE_1__.CacheableResponsePlugin; }
+/* harmony export */   "CacheableResponse": () => (/* reexport safe */ _CacheableResponse_js__WEBPACK_IMPORTED_MODULE_0__.CacheableResponse),
+/* harmony export */   "CacheableResponsePlugin": () => (/* reexport safe */ _CacheableResponsePlugin_js__WEBPACK_IMPORTED_MODULE_1__.CacheableResponsePlugin)
 /* harmony export */ });
 /* harmony import */ var _CacheableResponse_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CacheableResponse.js */ "./node_modules/workbox-cacheable-response/CacheableResponse.js");
 /* harmony import */ var _CacheableResponsePlugin_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CacheableResponsePlugin.js */ "./node_modules/workbox-cacheable-response/CacheableResponsePlugin.js");
@@ -568,11 +568,11 @@ __webpack_require__.r(__webpack_exports__);
 /*!********************************************************!*\
   !*** ./node_modules/workbox-core/_private/Deferred.js ***!
   \********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Deferred": function() { return /* binding */ Deferred; }
+/* harmony export */   "Deferred": () => (/* binding */ Deferred)
 /* harmony export */ });
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-core/_version.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_version_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -612,11 +612,11 @@ class Deferred {
 /*!************************************************************!*\
   !*** ./node_modules/workbox-core/_private/WorkboxError.js ***!
   \************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "WorkboxError": function() { return /* binding */ WorkboxError; }
+/* harmony export */   "WorkboxError": () => (/* binding */ WorkboxError)
 /* harmony export */ });
 /* harmony import */ var _models_messages_messageGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/messages/messageGenerator.js */ "./node_modules/workbox-core/models/messages/messageGenerator.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-core/_version.js");
@@ -664,11 +664,11 @@ class WorkboxError extends Error {
 /*!******************************************************!*\
   !*** ./node_modules/workbox-core/_private/assert.js ***!
   \******************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "assert": function() { return /* binding */ finalAssertExports; }
+/* harmony export */   "assert": () => (/* binding */ finalAssertExports)
 /* harmony export */ });
 /* harmony import */ var _private_WorkboxError_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_private/WorkboxError.js */ "./node_modules/workbox-core/_private/WorkboxError.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-core/_version.js");
@@ -754,11 +754,11 @@ const finalAssertExports =  false
 /*!**********************************************************************!*\
   !*** ./node_modules/workbox-core/_private/cacheMatchIgnoreParams.js ***!
   \**********************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "cacheMatchIgnoreParams": function() { return /* binding */ cacheMatchIgnoreParams; }
+/* harmony export */   "cacheMatchIgnoreParams": () => (/* binding */ cacheMatchIgnoreParams)
 /* harmony export */ });
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-core/_version.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_version_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -814,11 +814,11 @@ async function cacheMatchIgnoreParams(cache, request, ignoreParams, matchOptions
 /*!**********************************************************!*\
   !*** ./node_modules/workbox-core/_private/cacheNames.js ***!
   \**********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "cacheNames": function() { return /* binding */ cacheNames; }
+/* harmony export */   "cacheNames": () => (/* binding */ cacheNames)
 /* harmony export */ });
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-core/_version.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_version_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -879,11 +879,11 @@ const cacheNames = {
 /*!**********************************************************************************!*\
   !*** ./node_modules/workbox-core/_private/canConstructResponseFromBodyStream.js ***!
   \**********************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "canConstructResponseFromBodyStream": function() { return /* binding */ canConstructResponseFromBodyStream; }
+/* harmony export */   "canConstructResponseFromBodyStream": () => (/* binding */ canConstructResponseFromBodyStream)
 /* harmony export */ });
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-core/_version.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_version_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -930,11 +930,11 @@ function canConstructResponseFromBodyStream() {
 /*!***********************************************************!*\
   !*** ./node_modules/workbox-core/_private/dontWaitFor.js ***!
   \***********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "dontWaitFor": function() { return /* binding */ dontWaitFor; }
+/* harmony export */   "dontWaitFor": () => (/* binding */ dontWaitFor)
 /* harmony export */ });
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-core/_version.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_version_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -962,11 +962,11 @@ function dontWaitFor(promise) {
 /*!**************************************************************************!*\
   !*** ./node_modules/workbox-core/_private/executeQuotaErrorCallbacks.js ***!
   \**************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "executeQuotaErrorCallbacks": function() { return /* binding */ executeQuotaErrorCallbacks; }
+/* harmony export */   "executeQuotaErrorCallbacks": () => (/* binding */ executeQuotaErrorCallbacks)
 /* harmony export */ });
 /* harmony import */ var _private_logger_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_private/logger.js */ "./node_modules/workbox-core/_private/logger.js");
 /* harmony import */ var _models_quotaErrorCallbacks_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../models/quotaErrorCallbacks.js */ "./node_modules/workbox-core/models/quotaErrorCallbacks.js");
@@ -1013,11 +1013,11 @@ async function executeQuotaErrorCallbacks() {
 /*!**************************************************************!*\
   !*** ./node_modules/workbox-core/_private/getFriendlyURL.js ***!
   \**************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "getFriendlyURL": function() { return /* binding */ getFriendlyURL; }
+/* harmony export */   "getFriendlyURL": () => (/* binding */ getFriendlyURL)
 /* harmony export */ });
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-core/_version.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_version_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -1044,11 +1044,11 @@ const getFriendlyURL = (url) => {
 /*!******************************************************!*\
   !*** ./node_modules/workbox-core/_private/logger.js ***!
   \******************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "logger": function() { return /* binding */ logger; }
+/* harmony export */   "logger": () => (/* binding */ logger)
 /* harmony export */ });
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-core/_version.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_version_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -1125,11 +1125,11 @@ const logger = ( false
 /*!*******************************************************!*\
   !*** ./node_modules/workbox-core/_private/timeout.js ***!
   \*******************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "timeout": function() { return /* binding */ timeout; }
+/* harmony export */   "timeout": () => (/* binding */ timeout)
 /* harmony export */ });
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-core/_version.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_version_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -1159,11 +1159,11 @@ function timeout(ms) {
 /*!*********************************************************!*\
   !*** ./node_modules/workbox-core/_private/waitUntil.js ***!
   \*********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "waitUntil": function() { return /* binding */ waitUntil; }
+/* harmony export */   "waitUntil": () => (/* binding */ waitUntil)
 /* harmony export */ });
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-core/_version.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_version_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -1197,7 +1197,7 @@ function waitUntil(event, asyncFn) {
 /*!***********************************************!*\
   !*** ./node_modules/workbox-core/_version.js ***!
   \***********************************************/
-/***/ (function() {
+/***/ (() => {
 
 
 // @ts-ignore
@@ -1213,11 +1213,11 @@ catch (e) { }
 /*!***************************************************!*\
   !*** ./node_modules/workbox-core/copyResponse.js ***!
   \***************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "copyResponse": function() { return /* binding */ copyResponse; }
+/* harmony export */   "copyResponse": () => (/* binding */ copyResponse)
 /* harmony export */ });
 /* harmony import */ var _private_canConstructResponseFromBodyStream_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_private/canConstructResponseFromBodyStream.js */ "./node_modules/workbox-core/_private/canConstructResponseFromBodyStream.js");
 /* harmony import */ var _private_WorkboxError_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_private/WorkboxError.js */ "./node_modules/workbox-core/_private/WorkboxError.js");
@@ -1288,11 +1288,11 @@ async function copyResponse(response, modifier) {
 /*!***********************************************************************!*\
   !*** ./node_modules/workbox-core/models/messages/messageGenerator.js ***!
   \***********************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "messageGenerator": function() { return /* binding */ messageGenerator; }
+/* harmony export */   "messageGenerator": () => (/* binding */ messageGenerator)
 /* harmony export */ });
 /* harmony import */ var _messages_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./messages.js */ "./node_modules/workbox-core/models/messages/messages.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_version.js */ "./node_modules/workbox-core/_version.js");
@@ -1329,11 +1329,11 @@ const messageGenerator =  false ? 0 : generatorFunction;
 /*!***************************************************************!*\
   !*** ./node_modules/workbox-core/models/messages/messages.js ***!
   \***************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "messages": function() { return /* binding */ messages; }
+/* harmony export */   "messages": () => (/* binding */ messages)
 /* harmony export */ });
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_version.js */ "./node_modules/workbox-core/_version.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_version_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -1573,11 +1573,11 @@ const messages = {
 /*!*****************************************************************!*\
   !*** ./node_modules/workbox-core/models/quotaErrorCallbacks.js ***!
   \*****************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "quotaErrorCallbacks": function() { return /* binding */ quotaErrorCallbacks; }
+/* harmony export */   "quotaErrorCallbacks": () => (/* binding */ quotaErrorCallbacks)
 /* harmony export */ });
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-core/_version.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_version_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -1602,11 +1602,11 @@ const quotaErrorCallbacks = new Set();
 /*!*****************************************************************!*\
   !*** ./node_modules/workbox-core/registerQuotaErrorCallback.js ***!
   \*****************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "registerQuotaErrorCallback": function() { return /* binding */ registerQuotaErrorCallback; }
+/* harmony export */   "registerQuotaErrorCallback": () => (/* binding */ registerQuotaErrorCallback)
 /* harmony export */ });
 /* harmony import */ var _private_logger_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_private/logger.js */ "./node_modules/workbox-core/_private/logger.js");
 /* harmony import */ var _private_assert_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_private/assert.js */ "./node_modules/workbox-core/_private/assert.js");
@@ -1655,11 +1655,11 @@ function registerQuotaErrorCallback(callback) {
 /*!************************************************************!*\
   !*** ./node_modules/workbox-expiration/CacheExpiration.js ***!
   \************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CacheExpiration": function() { return /* binding */ CacheExpiration; }
+/* harmony export */   "CacheExpiration": () => (/* binding */ CacheExpiration)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_assert_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/assert.js */ "./node_modules/workbox-core/_private/assert.js");
 /* harmony import */ var workbox_core_private_dontWaitFor_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-core/_private/dontWaitFor.js */ "./node_modules/workbox-core/_private/dontWaitFor.js");
@@ -1845,11 +1845,11 @@ class CacheExpiration {
 /*!*************************************************************!*\
   !*** ./node_modules/workbox-expiration/ExpirationPlugin.js ***!
   \*************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ExpirationPlugin": function() { return /* binding */ ExpirationPlugin; }
+/* harmony export */   "ExpirationPlugin": () => (/* binding */ ExpirationPlugin)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_assert_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/assert.js */ "./node_modules/workbox-core/_private/assert.js");
 /* harmony import */ var workbox_core_private_cacheNames_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-core/_private/cacheNames.js */ "./node_modules/workbox-core/_private/cacheNames.js");
@@ -2123,7 +2123,7 @@ class ExpirationPlugin {
 /*!*****************************************************!*\
   !*** ./node_modules/workbox-expiration/_version.js ***!
   \*****************************************************/
-/***/ (function() {
+/***/ (() => {
 
 
 // @ts-ignore
@@ -2139,12 +2139,12 @@ catch (e) { }
 /*!**************************************************!*\
   !*** ./node_modules/workbox-expiration/index.js ***!
   \**************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CacheExpiration": function() { return /* reexport safe */ _CacheExpiration_js__WEBPACK_IMPORTED_MODULE_0__.CacheExpiration; },
-/* harmony export */   "ExpirationPlugin": function() { return /* reexport safe */ _ExpirationPlugin_js__WEBPACK_IMPORTED_MODULE_1__.ExpirationPlugin; }
+/* harmony export */   "CacheExpiration": () => (/* reexport safe */ _CacheExpiration_js__WEBPACK_IMPORTED_MODULE_0__.CacheExpiration),
+/* harmony export */   "ExpirationPlugin": () => (/* reexport safe */ _ExpirationPlugin_js__WEBPACK_IMPORTED_MODULE_1__.ExpirationPlugin)
 /* harmony export */ });
 /* harmony import */ var _CacheExpiration_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CacheExpiration.js */ "./node_modules/workbox-expiration/CacheExpiration.js");
 /* harmony import */ var _ExpirationPlugin_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ExpirationPlugin.js */ "./node_modules/workbox-expiration/ExpirationPlugin.js");
@@ -2172,11 +2172,11 @@ __webpack_require__.r(__webpack_exports__);
 /*!************************************************************************!*\
   !*** ./node_modules/workbox-expiration/models/CacheTimestampsModel.js ***!
   \************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CacheTimestampsModel": function() { return /* binding */ CacheTimestampsModel; }
+/* harmony export */   "CacheTimestampsModel": () => (/* binding */ CacheTimestampsModel)
 /* harmony export */ });
 /* harmony import */ var idb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! idb */ "./node_modules/idb/build/esm/index.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-expiration/_version.js");
@@ -2374,11 +2374,11 @@ class CacheTimestampsModel {
 /*!***************************************************************!*\
   !*** ./node_modules/workbox-precaching/PrecacheController.js ***!
   \***************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "PrecacheController": function() { return /* binding */ PrecacheController; }
+/* harmony export */   "PrecacheController": () => (/* binding */ PrecacheController)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_assert_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/assert.js */ "./node_modules/workbox-core/_private/assert.js");
 /* harmony import */ var workbox_core_private_cacheNames_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-core/_private/cacheNames.js */ "./node_modules/workbox-core/_private/cacheNames.js");
@@ -2689,11 +2689,11 @@ class PrecacheController {
 /*!*************************************************************!*\
   !*** ./node_modules/workbox-precaching/PrecacheStrategy.js ***!
   \*************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "PrecacheStrategy": function() { return /* binding */ PrecacheStrategy; }
+/* harmony export */   "PrecacheStrategy": () => (/* binding */ PrecacheStrategy)
 /* harmony export */ });
 /* harmony import */ var workbox_core_copyResponse_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/copyResponse.js */ "./node_modules/workbox-core/copyResponse.js");
 /* harmony import */ var workbox_core_private_cacheNames_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-core/_private/cacheNames.js */ "./node_modules/workbox-core/_private/cacheNames.js");
@@ -2926,7 +2926,7 @@ PrecacheStrategy.copyRedirectedCacheableResponsesPlugin = {
 /*!*****************************************************!*\
   !*** ./node_modules/workbox-precaching/_version.js ***!
   \*****************************************************/
-/***/ (function() {
+/***/ (() => {
 
 
 // @ts-ignore
@@ -2942,11 +2942,11 @@ catch (e) { }
 /*!**********************************************************!*\
   !*** ./node_modules/workbox-precaching/matchPrecache.js ***!
   \**********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "matchPrecache": function() { return /* binding */ matchPrecache; }
+/* harmony export */   "matchPrecache": () => (/* binding */ matchPrecache)
 /* harmony export */ });
 /* harmony import */ var _utils_getOrCreatePrecacheController_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/getOrCreatePrecacheController.js */ "./node_modules/workbox-precaching/utils/getOrCreatePrecacheController.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_version.js */ "./node_modules/workbox-precaching/_version.js");
@@ -2988,11 +2988,11 @@ function matchPrecache(request) {
 /*!*************************************************************************!*\
   !*** ./node_modules/workbox-precaching/utils/PrecacheCacheKeyPlugin.js ***!
   \*************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "PrecacheCacheKeyPlugin": function() { return /* binding */ PrecacheCacheKeyPlugin; }
+/* harmony export */   "PrecacheCacheKeyPlugin": () => (/* binding */ PrecacheCacheKeyPlugin)
 /* harmony export */ });
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-precaching/_version.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_version_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -3034,11 +3034,11 @@ class PrecacheCacheKeyPlugin {
 /*!******************************************************************************!*\
   !*** ./node_modules/workbox-precaching/utils/PrecacheInstallReportPlugin.js ***!
   \******************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "PrecacheInstallReportPlugin": function() { return /* binding */ PrecacheInstallReportPlugin; }
+/* harmony export */   "PrecacheInstallReportPlugin": () => (/* binding */ PrecacheInstallReportPlugin)
 /* harmony export */ });
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-precaching/_version.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_version_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -3094,11 +3094,11 @@ class PrecacheInstallReportPlugin {
 /*!*****************************************************************!*\
   !*** ./node_modules/workbox-precaching/utils/createCacheKey.js ***!
   \*****************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createCacheKey": function() { return /* binding */ createCacheKey; }
+/* harmony export */   "createCacheKey": () => (/* binding */ createCacheKey)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_WorkboxError_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/WorkboxError.js */ "./node_modules/workbox-core/_private/WorkboxError.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-precaching/_version.js");
@@ -3167,11 +3167,11 @@ function createCacheKey(entry) {
 /*!********************************************************************************!*\
   !*** ./node_modules/workbox-precaching/utils/getOrCreatePrecacheController.js ***!
   \********************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "getOrCreatePrecacheController": function() { return /* binding */ getOrCreatePrecacheController; }
+/* harmony export */   "getOrCreatePrecacheController": () => (/* binding */ getOrCreatePrecacheController)
 /* harmony export */ });
 /* harmony import */ var _PrecacheController_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../PrecacheController.js */ "./node_modules/workbox-precaching/PrecacheController.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-precaching/_version.js");
@@ -3204,11 +3204,11 @@ const getOrCreatePrecacheController = () => {
 /*!**********************************************************************!*\
   !*** ./node_modules/workbox-precaching/utils/printCleanupDetails.js ***!
   \**********************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "printCleanupDetails": function() { return /* binding */ printCleanupDetails; }
+/* harmony export */   "printCleanupDetails": () => (/* binding */ printCleanupDetails)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_logger_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/logger.js */ "./node_modules/workbox-core/_private/logger.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-precaching/_version.js");
@@ -3259,11 +3259,11 @@ function printCleanupDetails(deletedURLs) {
 /*!**********************************************************************!*\
   !*** ./node_modules/workbox-precaching/utils/printInstallDetails.js ***!
   \**********************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "printInstallDetails": function() { return /* binding */ printInstallDetails; }
+/* harmony export */   "printInstallDetails": () => (/* binding */ printInstallDetails)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_logger_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/logger.js */ "./node_modules/workbox-core/_private/logger.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-precaching/_version.js");
@@ -3324,7 +3324,7 @@ function printInstallDetails(urlsToPrecache, urlsAlreadyPrecached) {
 /*!**************************************************!*\
   !*** ./node_modules/workbox-recipes/_version.js ***!
   \**************************************************/
-/***/ (function() {
+/***/ (() => {
 
 
 // @ts-ignore
@@ -3340,11 +3340,11 @@ catch (e) { }
 /*!**********************************************************!*\
   !*** ./node_modules/workbox-recipes/googleFontsCache.js ***!
   \**********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "googleFontsCache": function() { return /* binding */ googleFontsCache; }
+/* harmony export */   "googleFontsCache": () => (/* binding */ googleFontsCache)
 /* harmony export */ });
 /* harmony import */ var workbox_routing_registerRoute_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-routing/registerRoute.js */ "./node_modules/workbox-routing/registerRoute.js");
 /* harmony import */ var workbox_strategies_StaleWhileRevalidate_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-strategies/StaleWhileRevalidate.js */ "./node_modules/workbox-strategies/StaleWhileRevalidate.js");
@@ -3408,11 +3408,11 @@ function googleFontsCache(options = {}) {
 /*!****************************************************!*\
   !*** ./node_modules/workbox-recipes/imageCache.js ***!
   \****************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "imageCache": function() { return /* binding */ imageCache; }
+/* harmony export */   "imageCache": () => (/* binding */ imageCache)
 /* harmony export */ });
 /* harmony import */ var _warmStrategyCache__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./warmStrategyCache */ "./node_modules/workbox-recipes/warmStrategyCache.js");
 /* harmony import */ var workbox_routing_registerRoute_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-routing/registerRoute.js */ "./node_modules/workbox-routing/registerRoute.js");
@@ -3480,16 +3480,16 @@ function imageCache(options = {}) {
 /*!***********************************************!*\
   !*** ./node_modules/workbox-recipes/index.js ***!
   \***********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "googleFontsCache": function() { return /* reexport safe */ _googleFontsCache__WEBPACK_IMPORTED_MODULE_0__.googleFontsCache; },
-/* harmony export */   "imageCache": function() { return /* reexport safe */ _imageCache__WEBPACK_IMPORTED_MODULE_1__.imageCache; },
-/* harmony export */   "offlineFallback": function() { return /* reexport safe */ _offlineFallback__WEBPACK_IMPORTED_MODULE_4__.offlineFallback; },
-/* harmony export */   "pageCache": function() { return /* reexport safe */ _pageCache__WEBPACK_IMPORTED_MODULE_3__.pageCache; },
-/* harmony export */   "staticResourceCache": function() { return /* reexport safe */ _staticResourceCache__WEBPACK_IMPORTED_MODULE_2__.staticResourceCache; },
-/* harmony export */   "warmStrategyCache": function() { return /* reexport safe */ _warmStrategyCache__WEBPACK_IMPORTED_MODULE_5__.warmStrategyCache; }
+/* harmony export */   "googleFontsCache": () => (/* reexport safe */ _googleFontsCache__WEBPACK_IMPORTED_MODULE_0__.googleFontsCache),
+/* harmony export */   "imageCache": () => (/* reexport safe */ _imageCache__WEBPACK_IMPORTED_MODULE_1__.imageCache),
+/* harmony export */   "offlineFallback": () => (/* reexport safe */ _offlineFallback__WEBPACK_IMPORTED_MODULE_4__.offlineFallback),
+/* harmony export */   "pageCache": () => (/* reexport safe */ _pageCache__WEBPACK_IMPORTED_MODULE_3__.pageCache),
+/* harmony export */   "staticResourceCache": () => (/* reexport safe */ _staticResourceCache__WEBPACK_IMPORTED_MODULE_2__.staticResourceCache),
+/* harmony export */   "warmStrategyCache": () => (/* reexport safe */ _warmStrategyCache__WEBPACK_IMPORTED_MODULE_5__.warmStrategyCache)
 /* harmony export */ });
 /* harmony import */ var _googleFontsCache__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./googleFontsCache */ "./node_modules/workbox-recipes/googleFontsCache.js");
 /* harmony import */ var _imageCache__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./imageCache */ "./node_modules/workbox-recipes/imageCache.js");
@@ -3525,11 +3525,11 @@ __webpack_require__.r(__webpack_exports__);
 /*!*********************************************************!*\
   !*** ./node_modules/workbox-recipes/offlineFallback.js ***!
   \*********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "offlineFallback": function() { return /* binding */ offlineFallback; }
+/* harmony export */   "offlineFallback": () => (/* binding */ offlineFallback)
 /* harmony export */ });
 /* harmony import */ var workbox_routing_setCatchHandler_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-routing/setCatchHandler.js */ "./node_modules/workbox-routing/setCatchHandler.js");
 /* harmony import */ var workbox_precaching_matchPrecache_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-precaching/matchPrecache.js */ "./node_modules/workbox-precaching/matchPrecache.js");
@@ -3602,11 +3602,11 @@ function offlineFallback(options = {}) {
 /*!***************************************************!*\
   !*** ./node_modules/workbox-recipes/pageCache.js ***!
   \***************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "pageCache": function() { return /* binding */ pageCache; }
+/* harmony export */   "pageCache": () => (/* binding */ pageCache)
 /* harmony export */ });
 /* harmony import */ var _warmStrategyCache__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./warmStrategyCache */ "./node_modules/workbox-recipes/warmStrategyCache.js");
 /* harmony import */ var workbox_routing_registerRoute_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-routing/registerRoute.js */ "./node_modules/workbox-routing/registerRoute.js");
@@ -3668,11 +3668,11 @@ function pageCache(options = {}) {
 /*!*************************************************************!*\
   !*** ./node_modules/workbox-recipes/staticResourceCache.js ***!
   \*************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "staticResourceCache": function() { return /* binding */ staticResourceCache; }
+/* harmony export */   "staticResourceCache": () => (/* binding */ staticResourceCache)
 /* harmony export */ });
 /* harmony import */ var _warmStrategyCache__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./warmStrategyCache */ "./node_modules/workbox-recipes/warmStrategyCache.js");
 /* harmony import */ var workbox_routing_registerRoute_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-routing/registerRoute.js */ "./node_modules/workbox-routing/registerRoute.js");
@@ -3732,11 +3732,11 @@ function staticResourceCache(options = {}) {
 /*!***********************************************************!*\
   !*** ./node_modules/workbox-recipes/warmStrategyCache.js ***!
   \***********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "warmStrategyCache": function() { return /* binding */ warmStrategyCache; }
+/* harmony export */   "warmStrategyCache": () => (/* binding */ warmStrategyCache)
 /* harmony export */ });
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_version.js */ "./node_modules/workbox-recipes/_version.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_version_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -3766,11 +3766,11 @@ function warmStrategyCache(options) {
 /*!*********************************************************!*\
   !*** ./node_modules/workbox-routing/NavigationRoute.js ***!
   \*********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "NavigationRoute": function() { return /* binding */ NavigationRoute; }
+/* harmony export */   "NavigationRoute": () => (/* binding */ NavigationRoute)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_assert_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/assert.js */ "./node_modules/workbox-core/_private/assert.js");
 /* harmony import */ var workbox_core_private_logger_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-core/_private/logger.js */ "./node_modules/workbox-core/_private/logger.js");
@@ -3890,11 +3890,11 @@ class NavigationRoute extends _Route_js__WEBPACK_IMPORTED_MODULE_2__.Route {
 /*!*****************************************************!*\
   !*** ./node_modules/workbox-routing/RegExpRoute.js ***!
   \*****************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "RegExpRoute": function() { return /* binding */ RegExpRoute; }
+/* harmony export */   "RegExpRoute": () => (/* binding */ RegExpRoute)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_assert_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/assert.js */ "./node_modules/workbox-core/_private/assert.js");
 /* harmony import */ var workbox_core_private_logger_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-core/_private/logger.js */ "./node_modules/workbox-core/_private/logger.js");
@@ -3984,11 +3984,11 @@ class RegExpRoute extends _Route_js__WEBPACK_IMPORTED_MODULE_2__.Route {
 /*!***********************************************!*\
   !*** ./node_modules/workbox-routing/Route.js ***!
   \***********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Route": function() { return /* binding */ Route; }
+/* harmony export */   "Route": () => (/* binding */ Route)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_assert_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/assert.js */ "./node_modules/workbox-core/_private/assert.js");
 /* harmony import */ var _utils_constants_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/constants.js */ "./node_modules/workbox-routing/utils/constants.js");
@@ -4063,11 +4063,11 @@ class Route {
 /*!************************************************!*\
   !*** ./node_modules/workbox-routing/Router.js ***!
   \************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Router": function() { return /* binding */ Router; }
+/* harmony export */   "Router": () => (/* binding */ Router)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_assert_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/assert.js */ "./node_modules/workbox-core/_private/assert.js");
 /* harmony import */ var workbox_core_private_getFriendlyURL_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-core/_private/getFriendlyURL.js */ "./node_modules/workbox-core/_private/getFriendlyURL.js");
@@ -4478,7 +4478,7 @@ class Router {
 /*!**************************************************!*\
   !*** ./node_modules/workbox-routing/_version.js ***!
   \**************************************************/
-/***/ (function() {
+/***/ (() => {
 
 
 // @ts-ignore
@@ -4494,17 +4494,17 @@ catch (e) { }
 /*!***********************************************!*\
   !*** ./node_modules/workbox-routing/index.js ***!
   \***********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "NavigationRoute": function() { return /* reexport safe */ _NavigationRoute_js__WEBPACK_IMPORTED_MODULE_0__.NavigationRoute; },
-/* harmony export */   "RegExpRoute": function() { return /* reexport safe */ _RegExpRoute_js__WEBPACK_IMPORTED_MODULE_1__.RegExpRoute; },
-/* harmony export */   "Route": function() { return /* reexport safe */ _Route_js__WEBPACK_IMPORTED_MODULE_3__.Route; },
-/* harmony export */   "Router": function() { return /* reexport safe */ _Router_js__WEBPACK_IMPORTED_MODULE_4__.Router; },
-/* harmony export */   "registerRoute": function() { return /* reexport safe */ _registerRoute_js__WEBPACK_IMPORTED_MODULE_2__.registerRoute; },
-/* harmony export */   "setCatchHandler": function() { return /* reexport safe */ _setCatchHandler_js__WEBPACK_IMPORTED_MODULE_5__.setCatchHandler; },
-/* harmony export */   "setDefaultHandler": function() { return /* reexport safe */ _setDefaultHandler_js__WEBPACK_IMPORTED_MODULE_6__.setDefaultHandler; }
+/* harmony export */   "NavigationRoute": () => (/* reexport safe */ _NavigationRoute_js__WEBPACK_IMPORTED_MODULE_0__.NavigationRoute),
+/* harmony export */   "RegExpRoute": () => (/* reexport safe */ _RegExpRoute_js__WEBPACK_IMPORTED_MODULE_1__.RegExpRoute),
+/* harmony export */   "Route": () => (/* reexport safe */ _Route_js__WEBPACK_IMPORTED_MODULE_3__.Route),
+/* harmony export */   "Router": () => (/* reexport safe */ _Router_js__WEBPACK_IMPORTED_MODULE_4__.Router),
+/* harmony export */   "registerRoute": () => (/* reexport safe */ _registerRoute_js__WEBPACK_IMPORTED_MODULE_2__.registerRoute),
+/* harmony export */   "setCatchHandler": () => (/* reexport safe */ _setCatchHandler_js__WEBPACK_IMPORTED_MODULE_5__.setCatchHandler),
+/* harmony export */   "setDefaultHandler": () => (/* reexport safe */ _setDefaultHandler_js__WEBPACK_IMPORTED_MODULE_6__.setDefaultHandler)
 /* harmony export */ });
 /* harmony import */ var _NavigationRoute_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./NavigationRoute.js */ "./node_modules/workbox-routing/NavigationRoute.js");
 /* harmony import */ var _RegExpRoute_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RegExpRoute.js */ "./node_modules/workbox-routing/RegExpRoute.js");
@@ -4542,11 +4542,11 @@ __webpack_require__.r(__webpack_exports__);
 /*!*******************************************************!*\
   !*** ./node_modules/workbox-routing/registerRoute.js ***!
   \*******************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "registerRoute": function() { return /* binding */ registerRoute; }
+/* harmony export */   "registerRoute": () => (/* binding */ registerRoute)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_logger_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/logger.js */ "./node_modules/workbox-core/_private/logger.js");
 /* harmony import */ var workbox_core_private_WorkboxError_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-core/_private/WorkboxError.js */ "./node_modules/workbox-core/_private/WorkboxError.js");
@@ -4657,11 +4657,11 @@ function registerRoute(capture, handler, method) {
 /*!*********************************************************!*\
   !*** ./node_modules/workbox-routing/setCatchHandler.js ***!
   \*********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "setCatchHandler": function() { return /* binding */ setCatchHandler; }
+/* harmony export */   "setCatchHandler": () => (/* binding */ setCatchHandler)
 /* harmony export */ });
 /* harmony import */ var _utils_getOrCreateDefaultRouter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/getOrCreateDefaultRouter.js */ "./node_modules/workbox-routing/utils/getOrCreateDefaultRouter.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_version.js */ "./node_modules/workbox-routing/_version.js");
@@ -4697,11 +4697,11 @@ function setCatchHandler(handler) {
 /*!***********************************************************!*\
   !*** ./node_modules/workbox-routing/setDefaultHandler.js ***!
   \***********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "setDefaultHandler": function() { return /* binding */ setDefaultHandler; }
+/* harmony export */   "setDefaultHandler": () => (/* binding */ setDefaultHandler)
 /* harmony export */ });
 /* harmony import */ var _utils_getOrCreateDefaultRouter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/getOrCreateDefaultRouter.js */ "./node_modules/workbox-routing/utils/getOrCreateDefaultRouter.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_version.js */ "./node_modules/workbox-routing/_version.js");
@@ -4740,12 +4740,12 @@ function setDefaultHandler(handler) {
 /*!*********************************************************!*\
   !*** ./node_modules/workbox-routing/utils/constants.js ***!
   \*********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "defaultMethod": function() { return /* binding */ defaultMethod; },
-/* harmony export */   "validMethods": function() { return /* binding */ validMethods; }
+/* harmony export */   "defaultMethod": () => (/* binding */ defaultMethod),
+/* harmony export */   "validMethods": () => (/* binding */ validMethods)
 /* harmony export */ });
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-routing/_version.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_version_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -4789,11 +4789,11 @@ const validMethods = [
 /*!************************************************************************!*\
   !*** ./node_modules/workbox-routing/utils/getOrCreateDefaultRouter.js ***!
   \************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "getOrCreateDefaultRouter": function() { return /* binding */ getOrCreateDefaultRouter; }
+/* harmony export */   "getOrCreateDefaultRouter": () => (/* binding */ getOrCreateDefaultRouter)
 /* harmony export */ });
 /* harmony import */ var _Router_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Router.js */ "./node_modules/workbox-routing/Router.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-routing/_version.js");
@@ -4832,11 +4832,11 @@ const getOrCreateDefaultRouter = () => {
 /*!****************************************************************!*\
   !*** ./node_modules/workbox-routing/utils/normalizeHandler.js ***!
   \****************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "normalizeHandler": function() { return /* binding */ normalizeHandler; }
+/* harmony export */   "normalizeHandler": () => (/* binding */ normalizeHandler)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_assert_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/assert.js */ "./node_modules/workbox-core/_private/assert.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-routing/_version.js");
@@ -4889,11 +4889,11 @@ const normalizeHandler = (handler) => {
 /*!*******************************************************!*\
   !*** ./node_modules/workbox-strategies/CacheFirst.js ***!
   \*******************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CacheFirst": function() { return /* binding */ CacheFirst; }
+/* harmony export */   "CacheFirst": () => (/* binding */ CacheFirst)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_assert_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/assert.js */ "./node_modules/workbox-core/_private/assert.js");
 /* harmony import */ var workbox_core_private_logger_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-core/_private/logger.js */ "./node_modules/workbox-core/_private/logger.js");
@@ -4999,11 +4999,11 @@ class CacheFirst extends _Strategy_js__WEBPACK_IMPORTED_MODULE_3__.Strategy {
 /*!******************************************************!*\
   !*** ./node_modules/workbox-strategies/CacheOnly.js ***!
   \******************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CacheOnly": function() { return /* binding */ CacheOnly; }
+/* harmony export */   "CacheOnly": () => (/* binding */ CacheOnly)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_assert_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/assert.js */ "./node_modules/workbox-core/_private/assert.js");
 /* harmony import */ var workbox_core_private_logger_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-core/_private/logger.js */ "./node_modules/workbox-core/_private/logger.js");
@@ -5082,11 +5082,11 @@ class CacheOnly extends _Strategy_js__WEBPACK_IMPORTED_MODULE_3__.Strategy {
 /*!*********************************************************!*\
   !*** ./node_modules/workbox-strategies/NetworkFirst.js ***!
   \*********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "NetworkFirst": function() { return /* binding */ NetworkFirst; }
+/* harmony export */   "NetworkFirst": () => (/* binding */ NetworkFirst)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_assert_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/assert.js */ "./node_modules/workbox-core/_private/assert.js");
 /* harmony import */ var workbox_core_private_logger_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-core/_private/logger.js */ "./node_modules/workbox-core/_private/logger.js");
@@ -5301,11 +5301,11 @@ class NetworkFirst extends _Strategy_js__WEBPACK_IMPORTED_MODULE_4__.Strategy {
 /*!********************************************************!*\
   !*** ./node_modules/workbox-strategies/NetworkOnly.js ***!
   \********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "NetworkOnly": function() { return /* binding */ NetworkOnly; }
+/* harmony export */   "NetworkOnly": () => (/* binding */ NetworkOnly)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_assert_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/assert.js */ "./node_modules/workbox-core/_private/assert.js");
 /* harmony import */ var workbox_core_private_logger_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-core/_private/logger.js */ "./node_modules/workbox-core/_private/logger.js");
@@ -5421,11 +5421,11 @@ class NetworkOnly extends _Strategy_js__WEBPACK_IMPORTED_MODULE_4__.Strategy {
 /*!*****************************************************************!*\
   !*** ./node_modules/workbox-strategies/StaleWhileRevalidate.js ***!
   \*****************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "StaleWhileRevalidate": function() { return /* binding */ StaleWhileRevalidate; }
+/* harmony export */   "StaleWhileRevalidate": () => (/* binding */ StaleWhileRevalidate)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_assert_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/assert.js */ "./node_modules/workbox-core/_private/assert.js");
 /* harmony import */ var workbox_core_private_logger_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-core/_private/logger.js */ "./node_modules/workbox-core/_private/logger.js");
@@ -5561,11 +5561,11 @@ class StaleWhileRevalidate extends _Strategy_js__WEBPACK_IMPORTED_MODULE_4__.Str
 /*!*****************************************************!*\
   !*** ./node_modules/workbox-strategies/Strategy.js ***!
   \*****************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Strategy": function() { return /* binding */ Strategy; }
+/* harmony export */   "Strategy": () => (/* binding */ Strategy)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_cacheNames_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/cacheNames.js */ "./node_modules/workbox-core/_private/cacheNames.js");
 /* harmony import */ var workbox_core_private_WorkboxError_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-core/_private/WorkboxError.js */ "./node_modules/workbox-core/_private/WorkboxError.js");
@@ -5810,11 +5810,11 @@ class Strategy {
 /*!************************************************************!*\
   !*** ./node_modules/workbox-strategies/StrategyHandler.js ***!
   \************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "StrategyHandler": function() { return /* binding */ StrategyHandler; }
+/* harmony export */   "StrategyHandler": () => (/* binding */ StrategyHandler)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_assert_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/assert.js */ "./node_modules/workbox-core/_private/assert.js");
 /* harmony import */ var workbox_core_private_cacheMatchIgnoreParams_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-core/_private/cacheMatchIgnoreParams.js */ "./node_modules/workbox-core/_private/cacheMatchIgnoreParams.js");
@@ -6351,7 +6351,7 @@ class StrategyHandler {
 /*!*****************************************************!*\
   !*** ./node_modules/workbox-strategies/_version.js ***!
   \*****************************************************/
-/***/ (function() {
+/***/ (() => {
 
 
 // @ts-ignore
@@ -6367,17 +6367,17 @@ catch (e) { }
 /*!**************************************************!*\
   !*** ./node_modules/workbox-strategies/index.js ***!
   \**************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CacheFirst": function() { return /* reexport safe */ _CacheFirst_js__WEBPACK_IMPORTED_MODULE_0__.CacheFirst; },
-/* harmony export */   "CacheOnly": function() { return /* reexport safe */ _CacheOnly_js__WEBPACK_IMPORTED_MODULE_1__.CacheOnly; },
-/* harmony export */   "NetworkFirst": function() { return /* reexport safe */ _NetworkFirst_js__WEBPACK_IMPORTED_MODULE_2__.NetworkFirst; },
-/* harmony export */   "NetworkOnly": function() { return /* reexport safe */ _NetworkOnly_js__WEBPACK_IMPORTED_MODULE_3__.NetworkOnly; },
-/* harmony export */   "StaleWhileRevalidate": function() { return /* reexport safe */ _StaleWhileRevalidate_js__WEBPACK_IMPORTED_MODULE_4__.StaleWhileRevalidate; },
-/* harmony export */   "Strategy": function() { return /* reexport safe */ _Strategy_js__WEBPACK_IMPORTED_MODULE_5__.Strategy; },
-/* harmony export */   "StrategyHandler": function() { return /* reexport safe */ _StrategyHandler_js__WEBPACK_IMPORTED_MODULE_6__.StrategyHandler; }
+/* harmony export */   "CacheFirst": () => (/* reexport safe */ _CacheFirst_js__WEBPACK_IMPORTED_MODULE_0__.CacheFirst),
+/* harmony export */   "CacheOnly": () => (/* reexport safe */ _CacheOnly_js__WEBPACK_IMPORTED_MODULE_1__.CacheOnly),
+/* harmony export */   "NetworkFirst": () => (/* reexport safe */ _NetworkFirst_js__WEBPACK_IMPORTED_MODULE_2__.NetworkFirst),
+/* harmony export */   "NetworkOnly": () => (/* reexport safe */ _NetworkOnly_js__WEBPACK_IMPORTED_MODULE_3__.NetworkOnly),
+/* harmony export */   "StaleWhileRevalidate": () => (/* reexport safe */ _StaleWhileRevalidate_js__WEBPACK_IMPORTED_MODULE_4__.StaleWhileRevalidate),
+/* harmony export */   "Strategy": () => (/* reexport safe */ _Strategy_js__WEBPACK_IMPORTED_MODULE_5__.Strategy),
+/* harmony export */   "StrategyHandler": () => (/* reexport safe */ _StrategyHandler_js__WEBPACK_IMPORTED_MODULE_6__.StrategyHandler)
 /* harmony export */ });
 /* harmony import */ var _CacheFirst_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CacheFirst.js */ "./node_modules/workbox-strategies/CacheFirst.js");
 /* harmony import */ var _CacheOnly_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CacheOnly.js */ "./node_modules/workbox-strategies/CacheOnly.js");
@@ -6418,11 +6418,11 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************************************************************!*\
   !*** ./node_modules/workbox-strategies/plugins/cacheOkAndOpaquePlugin.js ***!
   \***************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "cacheOkAndOpaquePlugin": function() { return /* binding */ cacheOkAndOpaquePlugin; }
+/* harmony export */   "cacheOkAndOpaquePlugin": () => (/* binding */ cacheOkAndOpaquePlugin)
 /* harmony export */ });
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_version.js */ "./node_modules/workbox-strategies/_version.js");
 /* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_version_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -6460,11 +6460,11 @@ const cacheOkAndOpaquePlugin = {
 /*!***********************************************************!*\
   !*** ./node_modules/workbox-strategies/utils/messages.js ***!
   \***********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "messages": function() { return /* binding */ messages; }
+/* harmony export */   "messages": () => (/* binding */ messages)
 /* harmony export */ });
 /* harmony import */ var workbox_core_private_logger_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-core/_private/logger.js */ "./node_modules/workbox-core/_private/logger.js");
 /* harmony import */ var workbox_core_private_getFriendlyURL_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-core/_private/getFriendlyURL.js */ "./node_modules/workbox-core/_private/getFriendlyURL.js");
@@ -6498,12 +6498,12 @@ const messages = {
 /*!***********************************************************!*\
   !*** ./node_modules/workbox-cacheable-response/index.mjs ***!
   \***********************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CacheableResponse": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheableResponse; },
-/* harmony export */   "CacheableResponsePlugin": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheableResponsePlugin; }
+/* harmony export */   "CacheableResponse": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheableResponse),
+/* harmony export */   "CacheableResponsePlugin": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheableResponsePlugin)
 /* harmony export */ });
 /* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./node_modules/workbox-cacheable-response/index.js");
 
@@ -6514,12 +6514,12 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************************************!*\
   !*** ./node_modules/workbox-expiration/index.mjs ***!
   \***************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CacheExpiration": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheExpiration; },
-/* harmony export */   "ExpirationPlugin": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.ExpirationPlugin; }
+/* harmony export */   "CacheExpiration": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheExpiration),
+/* harmony export */   "ExpirationPlugin": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.ExpirationPlugin)
 /* harmony export */ });
 /* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./node_modules/workbox-expiration/index.js");
 
@@ -6530,16 +6530,16 @@ __webpack_require__.r(__webpack_exports__);
 /*!************************************************!*\
   !*** ./node_modules/workbox-recipes/index.mjs ***!
   \************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "googleFontsCache": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.googleFontsCache; },
-/* harmony export */   "imageCache": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.imageCache; },
-/* harmony export */   "offlineFallback": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.offlineFallback; },
-/* harmony export */   "pageCache": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.pageCache; },
-/* harmony export */   "staticResourceCache": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.staticResourceCache; },
-/* harmony export */   "warmStrategyCache": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.warmStrategyCache; }
+/* harmony export */   "googleFontsCache": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.googleFontsCache),
+/* harmony export */   "imageCache": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.imageCache),
+/* harmony export */   "offlineFallback": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.offlineFallback),
+/* harmony export */   "pageCache": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.pageCache),
+/* harmony export */   "staticResourceCache": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.staticResourceCache),
+/* harmony export */   "warmStrategyCache": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.warmStrategyCache)
 /* harmony export */ });
 /* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./node_modules/workbox-recipes/index.js");
 
@@ -6550,17 +6550,17 @@ __webpack_require__.r(__webpack_exports__);
 /*!************************************************!*\
   !*** ./node_modules/workbox-routing/index.mjs ***!
   \************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "NavigationRoute": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.NavigationRoute; },
-/* harmony export */   "RegExpRoute": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.RegExpRoute; },
-/* harmony export */   "Route": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Route; },
-/* harmony export */   "Router": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Router; },
-/* harmony export */   "registerRoute": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.registerRoute; },
-/* harmony export */   "setCatchHandler": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.setCatchHandler; },
-/* harmony export */   "setDefaultHandler": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.setDefaultHandler; }
+/* harmony export */   "NavigationRoute": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.NavigationRoute),
+/* harmony export */   "RegExpRoute": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.RegExpRoute),
+/* harmony export */   "Route": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Route),
+/* harmony export */   "Router": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Router),
+/* harmony export */   "registerRoute": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.registerRoute),
+/* harmony export */   "setCatchHandler": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.setCatchHandler),
+/* harmony export */   "setDefaultHandler": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.setDefaultHandler)
 /* harmony export */ });
 /* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./node_modules/workbox-routing/index.js");
 
@@ -6571,17 +6571,17 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************************************!*\
   !*** ./node_modules/workbox-strategies/index.mjs ***!
   \***************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CacheFirst": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheFirst; },
-/* harmony export */   "CacheOnly": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheOnly; },
-/* harmony export */   "NetworkFirst": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.NetworkFirst; },
-/* harmony export */   "NetworkOnly": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.NetworkOnly; },
-/* harmony export */   "StaleWhileRevalidate": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.StaleWhileRevalidate; },
-/* harmony export */   "Strategy": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Strategy; },
-/* harmony export */   "StrategyHandler": function() { return /* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.StrategyHandler; }
+/* harmony export */   "CacheFirst": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheFirst),
+/* harmony export */   "CacheOnly": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheOnly),
+/* harmony export */   "NetworkFirst": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.NetworkFirst),
+/* harmony export */   "NetworkOnly": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.NetworkOnly),
+/* harmony export */   "StaleWhileRevalidate": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.StaleWhileRevalidate),
+/* harmony export */   "Strategy": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Strategy),
+/* harmony export */   "StrategyHandler": () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.StrategyHandler)
 /* harmony export */ });
 /* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./node_modules/workbox-strategies/index.js");
 
@@ -6616,52 +6616,52 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
+/******/ 		__webpack_require__.n = (module) => {
 /******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
 /******/ 			__webpack_require__.d(getter, { a: getter });
 /******/ 			return getter;
 /******/ 		};
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/define property getters */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 		__webpack_require__.d = (exports, definition) => {
 /******/ 			for(var key in definition) {
 /******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	!function() {
-/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
-/******/ 	}();
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = function(exports) {
+/******/ 		__webpack_require__.r = (exports) => {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-!function() {
-/*!*************************************************************************************************************************************!*\
-  !*** ../../.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/bundler/gems/decidim-36f32b445153/decidim-core/app/packs/src/decidim/sw/sw.js ***!
-  \*************************************************************************************************************************************/
+(() => {
+/*!****************************************************************************************************************************************!*\
+  !*** ../../../.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/bundler/gems/decidim-4dc4fca38ac9/decidim-core/app/packs/src/decidim/sw/sw.js ***!
+  \****************************************************************************************************************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var workbox_recipes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-recipes */ "./node_modules/workbox-recipes/index.mjs");
 /* harmony import */ var workbox_routing__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-routing */ "./node_modules/workbox-routing/index.mjs");
@@ -6765,7 +6765,7 @@ self.__WB_DISABLE_DEV_LOGS = true;
  */
 // eslint-disable-next-line no-unused-vars
 
-var dummy = [{'revision':'5ec3d963eef9ea746cb1563b1c185b98','url':'/decidim-packs/css/decidim_admin.css'},{'revision':'0e2f929b332c701c19ca7566b4b7ee2f','url':'/decidim-packs/css/decidim_api_docs.css'},{'revision':'58c1510538f4ec218aba126a27e8896b','url':'/decidim-packs/css/decidim_api_graphiql.css'},{'revision':'ed9131ff795450f81936c8f830b88007','url':'/decidim-packs/css/decidim_conference_diploma.css'},{'revision':'38568bf10ad2f5217933e3e3a157d533','url':'/decidim-packs/css/decidim_core.css'},{'revision':'b70341a7003d5af4e61c41f876f0675d','url':'/decidim-packs/css/decidim_dev.css'},{'revision':'be6c578ecbbb0025be0803365faf05ef','url':'/decidim-packs/css/decidim_elections_trustee_zone.css'},{'revision':'ad1f86409eaa68055417b7f26f05c314','url':'/decidim-packs/css/decidim_email.css'},{'revision':'2ff5a169b074e78b6fa258f6ec953f85','url':'/decidim-packs/css/decidim_initiatives_initiatives_votes.css'},{'revision':'6c46a9d13a3cf73df9b0ec236e6babe0','url':'/decidim-packs/css/decidim_initiatives_print.css'},{'revision':'878713b1e19a89dffe98188171f2aefe','url':'/decidim-packs/css/decidim_map.css'},{'revision':'c886fd54f25a4773d2e84e592fea5f6b','url':'/decidim-packs/css/decidim_questionnaire_answers_pdf.css'},{'revision':'50f13e965dbdf5d2c410c8378d225232','url':'/decidim-packs/css/decidim_system.css'},{'revision':'4fadb517f6dff9a78619337c67c34959','url':'/decidim-packs/css/decidim_templates.css'},{'revision':'8b61f72c4865f80f8f9484ff8c7be4b6','url':'/decidim-packs/css/decidim_votings_admin_votings.css'},{'revision':'1252c2a6f131591bb91d50139eff6a4f','url':'/decidim-packs/css/vendors-node_modules_graphiql_esm_index_js-node_modules_graphiql_graphiql_css.css'},{'revision':'9bbc985dcc5072b93384ed87dbd12259','url':'/decidim-packs/js/_rbenv_versions_2_7_4_lib_ruby_gems_2_7_0_bundler_gems_decidim-36f32b445153_decidim-admin_app-382e6b.js'},{'revision':'b9838f6409762946745a6ec2011280e1','url':'/decidim-packs/js/_rbenv_versions_2_7_4_lib_ruby_gems_2_7_0_bundler_gems_decidim-36f32b445153_decidim-core_app_-063596.js'},{'revision':'3a66050fd20c5ab611dd3cc73567fd9e','url':'/decidim-packs/js/_rbenv_versions_2_7_4_lib_ruby_gems_2_7_0_bundler_gems_decidim-36f32b445153_decidim-core_app_-164658.js'},{'revision':'e25755ee7db85a357a0192d1a38ec018','url':'/decidim-packs/js/_rbenv_versions_2_7_4_lib_ruby_gems_2_7_0_bundler_gems_decidim-36f32b445153_decidim-core_app_-782f3c.js'},{'revision':'5f393b7a11914a0e788a60e6373d4438','url':'/decidim-packs/js/_rbenv_versions_2_7_4_lib_ruby_gems_2_7_0_bundler_gems_decidim-36f32b445153_decidim-core_app_-ad1d9b.js'},{'revision':'9e306feae1c4d4639fba94a41a37b671','url':'/decidim-packs/js/_rbenv_versions_2_7_4_lib_ruby_gems_2_7_0_bundler_gems_decidim-36f32b445153_decidim-core_app_-cda607.js'},{'revision':'11151c6b3ac70497379bc56f4296da67','url':'/decidim-packs/js/_rbenv_versions_2_7_4_lib_ruby_gems_2_7_0_bundler_gems_decidim-36f32b445153_decidim-forms_app-b68f92.js'},{'revision':'075ed2a1594a913dcc56c06642197029','url':'/decidim-packs/js/decidim_accountability.js'},{'revision':'ce1cfb30f42e18562bf8c2713031a3ed','url':'/decidim-packs/js/decidim_accountability_admin.js'},{'revision':'26ecd179523632a1ee3a1fb7d56d23d8','url':'/decidim-packs/js/decidim_admin.js'},{'revision':'e08386b9457bc935ac3f958609a3b381','url':'/decidim-packs/js/decidim_api_docs.js'},{'revision':'b5f0f8a81f4e12b37cbb651a94d0ec19','url':'/decidim-packs/js/decidim_api_graphiql.js'},{'revision':'b328e09e9c350a3c6d77636ef347b5d3','url':'/decidim-packs/js/decidim_assemblies.js'},{'revision':'712a071ccc72dc189c3037073aa81bc7','url':'/decidim-packs/js/decidim_assemblies_admin.js'},{'revision':'08749cd7a1bb9c3b8b9aaadeffbf12fb','url':'/decidim-packs/js/decidim_blogs.js'},{'revision':'ffbc439dfb4c75ff4c63abd28a6962df','url':'/decidim-packs/js/decidim_budgets.js'},{'revision':'7dd1563b7ae93bd3a49cc168dc90abc8','url':'/decidim-packs/js/decidim_conference_diploma.js'},{'revision':'227aa111904e2cd1cf3f51d516753afa','url':'/decidim-packs/js/decidim_conferences_admin.js'},{'revision':'4e1e9fe21b55e66382396f68d104a021','url':'/decidim-packs/js/decidim_consultations.js'},{'revision':'0f5659dda6e6c98e4c491102426f0816','url':'/decidim-packs/js/decidim_core.js'},{'revision':'7108919dd936ad62f27009c7b0a3902c','url':'/decidim-packs/js/decidim_debates_admin.js'},{'revision':'9713613606ebfce7ca17852d108090e4','url':'/decidim-packs/js/decidim_dev.js'},{'revision':'51ce32dd32c3f7faf12e8a1dcf5e15e9','url':'/decidim-packs/js/decidim_elections.js'},{'revision':'1a20b7c2a558ecec2bd0a67a773fce81','url':'/decidim-packs/js/decidim_elections_admin_pending_action.js'},{'revision':'850f63a36e025b39fb7b69bdb74f218a','url':'/decidim-packs/js/decidim_elections_admin_trustees_process.js'},{'revision':'375b7a636add82aafc6f9a5e85baff75','url':'/decidim-packs/js/decidim_elections_admin_vote_statistics.js'},{'revision':'31e7d38797a39abe55d6c79c930e9977','url':'/decidim-packs/js/decidim_elections_election_log.js'},{'revision':'fb1bb2d5a08918db45311d5e8676c5bc','url':'/decidim-packs/js/decidim_elections_onboarding.js'},{'revision':'6cf6530252f12b7a319a021e6d28d1e3','url':'/decidim-packs/js/decidim_elections_trustee_key_ceremony.js'},{'revision':'da4245a8a7e77037ab374d1d3eb91ffd','url':'/decidim-packs/js/decidim_elections_trustee_tally.js'},{'revision':'4ee4f5794bb3f56dfbc5c88f224c1626','url':'/decidim-packs/js/decidim_elections_trustee_trustee_zone.js'},{'revision':'db7c2b7a274ece3935273ece728b450f','url':'/decidim-packs/js/decidim_elections_trustee_zone.js'},{'revision':'75f1099a413db74a55806ed01b8ac672','url':'/decidim-packs/js/decidim_elections_voter_casting_vote.js'},{'revision':'f2aba3afa59e3e5bf96a863807c98bfd','url':'/decidim-packs/js/decidim_elections_voter_new_vote.js'},{'revision':'8df6c409ff1ca10071327d32e1f483f1','url':'/decidim-packs/js/decidim_elections_voter_setup_preview.js'},{'revision':'9c868cf3c10c88fafd3d5ab1ab2d6605','url':'/decidim-packs/js/decidim_elections_voter_setup_vote.js'},{'revision':'8fddfdbd84e4c964af0b21209e431424','url':'/decidim-packs/js/decidim_elections_voter_verify_vote.js'},{'revision':'f7cb040b43620ed08019775095c10ff6','url':'/decidim-packs/js/decidim_email.js'},{'revision':'ea86f4bbdadf53ed2124fa3a098da86a','url':'/decidim-packs/js/decidim_forms.js'},{'revision':'fc7c507d42b8be18cd9af782f709015f','url':'/decidim-packs/js/decidim_forms_admin.js'},{'revision':'10574d346f0d040c88f95b5db83d1f20','url':'/decidim-packs/js/decidim_geocoding_provider_here.js'},{'revision':'e1ff2f67eb7982380706ed24dfc2bac9','url':'/decidim-packs/js/decidim_geocoding_provider_photon.js'},{'revision':'2ba912045ea3bae2ee8d05257c8c2c24','url':'/decidim-packs/js/decidim_initiatives.js'},{'revision':'34b5fdffc5a5a543d7e6092c7e47fbf1','url':'/decidim-packs/js/decidim_initiatives_admin.js'},{'revision':'196801a4bd94ce7b3ca0c9e9838e195a','url':'/decidim-packs/js/decidim_initiatives_initiatives_votes.js'},{'revision':'70ec19bd738e70a4ec6f5582c1f9510e','url':'/decidim-packs/js/decidim_initiatives_print.js'},{'revision':'eaab2962e69cc7e37c2058ed30bf1cd5','url':'/decidim-packs/js/decidim_map.js'},{'revision':'735cbe106e4afb60c0fd5e4ea9b10934','url':'/decidim-packs/js/decidim_map_provider_default.js'},{'revision':'87102bc7f07508ffc5f23d03d148e64c','url':'/decidim-packs/js/decidim_map_provider_here.js'},{'revision':'daf4e31bdd378c7ee8716677a1ff8a9e','url':'/decidim-packs/js/decidim_meetings.js'},{'revision':'cb11d25859f057ecd218d56b163da221','url':'/decidim-packs/js/decidim_meetings_admin.js'},{'revision':'2af0ceaa2d922375401e30cefa150372','url':'/decidim-packs/js/decidim_pages.js'},{'revision':'354c546ee19ec2ce0e0528e712eaad37','url':'/decidim-packs/js/decidim_participatory_processes.js'},{'revision':'40abe3c7b5ae05a3c7854f5897da2c76','url':'/decidim-packs/js/decidim_participatory_processes_admin.js'},{'revision':'f0b41c823595aa17a69f02d3acab9b14','url':'/decidim-packs/js/decidim_proposals.js'},{'revision':'3039a88dbb04baede3fc01c88de7f90c','url':'/decidim-packs/js/decidim_proposals_admin.js'},{'revision':'b916481722dd9f239d8d38b7ba02996b','url':'/decidim-packs/js/decidim_questionnaire_answers_pdf.js'},{'revision':'e683a42c44115be633638425e8bc0387','url':'/decidim-packs/js/decidim_sortitions.js'},{'revision':'3acc0a357450baad97284be2605f8a3d','url':'/decidim-packs/js/decidim_system.js'},{'revision':'2311bb670940d48f1686f2f323525c49','url':'/decidim-packs/js/decidim_templates.js'},{'revision':'a5c4e429f2d00805c4135d791ec148fa','url':'/decidim-packs/js/decidim_votings_admin_monitoring_committee_members_form.js'},{'revision':'902189354cb3bdf83e6d009902be842a','url':'/decidim-packs/js/decidim_votings_admin_polling_officers_form.js'},{'revision':'e17e7f4061d321943c6a821a4bca5d0b','url':'/decidim-packs/js/decidim_votings_admin_polling_officers_picker.js'},{'revision':'7b3109baa63b947955c07b3d035de20a','url':'/decidim-packs/js/decidim_votings_admin_polling_stations_form.js'},{'revision':'d65d7d8468a5bfedf78db86501822158','url':'/decidim-packs/js/decidim_votings_admin_update_census_dataset_status.js'},{'revision':'e00435039658c84bf013615e1771601d','url':'/decidim-packs/js/decidim_votings_admin_votings.js'},{'revision':'7a5ab27042f0a9acb43a2b057ec97b65','url':'/decidim-packs/js/decidim_votings_in_person_vote.js'},{'revision':'3f610317f36ee2bc16c63f14f1ddbe4d','url':'/decidim-packs/js/decidim_votings_voting_description_cell.js'},{'revision':'e0a9c6ba102346dc09dc8a9cd31fb9ae','url':'/decidim-packs/js/decidim_votings_voting_polling_officer_zone_edit_closure.js'},{'revision':'2f57096994ce9b4d79f23628a69d0a2a','url':'/decidim-packs/js/decidim_votings_voting_polling_officer_zone_in_person_vote.js'},{'revision':'732aab9a423f1aa9c910794aab611e89','url':'/decidim-packs/js/decidim_votings_voting_polling_officer_zone_new_closure.js'},{'revision':'2f0622312fcfa294e9a38eef084f3f6c','url':'/decidim-packs/js/decidim_votings_voting_polling_officer_zone_sign_closure.js'},{'revision':'4926fd94f017d8079b9003a937e2e616','url':'/decidim-packs/js/decidim_widget.js'},{'revision':'9b7fefadccc6d24e43abd56029ebc2fc','url':'/decidim-packs/js/node_modules_babel_runtime_regenerator_index_js-node_modules_tarekraafat_autocomplete_js_dist-3d1e21.js'},{'revision':'56554ea3e496af04c3eeaa3536047315','url':'/decidim-packs/js/vendors-node_modules_axe-core_axe_js.js'},{'revision':'1a0dd3821fba8a804d76ec85271795d1','url':'/decidim-packs/js/vendors-node_modules_babel_runtime_regenerator_index_js-node_modules_tarekraafat_autocomplete-a81894.js'},{'revision':'d7271a1318fcc7586767c6fc4e881be3','url':'/decidim-packs/js/vendors-node_modules_d3_index_js.js'},{'revision':'1dbad7ea98573de3502f32daaa472464','url':'/decidim-packs/js/vendors-node_modules_decidim_voting_schemes-dummy_src_index_js-node_modules_decidim_voting_sc-1fa8e6.js'},{'revision':'f017f93b4fd05cab9ca470297d716306','url':'/decidim-packs/js/vendors-node_modules_diff_lib_index_mjs.js'},{'revision':'9ace3020c482e1cea2dc8565326cfdda','url':'/decidim-packs/js/vendors-node_modules_graphql_language_printer_mjs-node_modules_graphql_language_source_mjs.js'},{'revision':'eaa8401e840c2d28a5aa5ae51b09a983','url':'/decidim-packs/js/vendors-node_modules_html5sortable_dist_html5sortable_es_js.js'},{'revision':'2711e285c78e4b26dbaad11c8baafa44','url':'/decidim-packs/js/vendors-node_modules_joeattardi_emoji-button_dist_index_js-node_modules_zeitiger_appendaround-3ddad2.js'},{'revision':'407a4020f59926291e070aca1a7ced96','url':'/decidim-packs/js/vendors-node_modules_jquery-serializejson_jquery_serializejson_js.js'},{'revision':'0ded8d9ee5deb429b5520e7aa0f7a3fa','url':'/decidim-packs/js/vendors-node_modules_leaflet_markercluster_dist_leaflet_markercluster-src_js-node_modules_lea-91385c.js'},{'revision':'78a1061be8c95810ab68551e35881cda','url':'/decidim-packs/js/vendors-node_modules_rails_activestorage_app_assets_javascripts_activestorage_js-node_modules-5e10f0.js'},{'revision':'463e81ae7d84afacf0e2be246b2bda35','url':'/decidim-packs/js/vendors-node_modules_regenerator-runtime_runtime_js.js'},{'revision':null,'url':'/decidim-packs/media/documents/057f608bdff3d77526ff.odt'},{'revision':null,'url':'/decidim-packs/media/documents/0e67170e72070b470a07.md'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_400-9c6e4dfdd59c9f0df0f8.ttf'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_400-c60b44947671d757833d.woff2'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_400-f8eb0fd7380512a226cd.woff'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_600-079db4a1c8da8ec06700.woff2'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_600-321eaeac03e6321b823f.woff'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_600-a2c16f2d0995dcf36831.ttf'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_900-7852ed941061eb34f8a3.woff'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_900-cdf7b11440b90af6a688.ttf'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_900-d5a56e0c3bdd31eaadd4.woff2'},{'revision':null,'url':'/decidim-packs/media/images/avatar-multiuser-67c042dbbc8661cd06df.png'},{'revision':null,'url':'/decidim-packs/media/images/cc-badge-afa3eec02a18f532285b.png'},{'revision':null,'url':'/decidim-packs/media/images/decidim-logo-318879ac2f9a6dd9ab6b.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_accountability_icon-55aaa6f0f7f85234bad7.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_assemblies-d9571d0b2d158eb891c8.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_blogs-5c0bd36dad84fad9d502.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_budgets-63f448a8ecee4f8376a0.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_conferences-d8f8364c84ea50df120f.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_consultations-b751dc698919e88293cc.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_debates-b8d6b95f59fdb4c76d08.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_dev_dummy-7c65732068c5ec7c313e.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_elections-15e5583a7f2834cd644e.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_accepted_proposals-907eee548361dfee6abe.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_attended_meetings-0a385f1bbe5a6e378d14.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_commented_debates-753fa30fa95d1cb600eb.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_followers-36313db34d9f324a71e6.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_initiatives-c956bd99a6da11e4c751.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_invitations-c1fe9eaba927bd4898c5.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_proposal_votes-13426dd64ea84f600a64.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_proposals-92b1e6ff9b790aad8550.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_test-12369bee0baf637c42e9.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_initiatives-8822c933216741c5fd30.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_meetings-f1cb40f132fbc2fa9a00.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_pages-ad2a544f33159fa4409a.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_participatory_processes-6418d7bb8c56608fe377.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_proposals-15e5583a7f2834cd644e.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_surveys-5771e3e945ff9473a563.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_templates-15e5583a7f2834cd644e.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_votings-d8f8364c84ea50df120f.svg'},{'revision':null,'url':'/decidim-packs/media/images/default-avatar-aaa9e55bac5d7159b847.svg'},{'revision':null,'url':'/decidim-packs/media/images/delicious-645ddfaca5163af23947.svg'},{'revision':null,'url':'/decidim-packs/media/images/douban-59306a4ec1a7595eda35.svg'},{'revision':null,'url':'/decidim-packs/media/images/email-d79a53d1d223015094db.svg'},{'revision':null,'url':'/decidim-packs/media/images/facebook-0ada3788990cda55b9ba.svg'},{'revision':null,'url':'/decidim-packs/media/images/google-b8225d6a9b718fa1749f.svg'},{'revision':null,'url':'/decidim-packs/media/images/google_bookmark-524f99e4fffb564dda37.svg'},{'revision':null,'url':'/decidim-packs/media/images/google_plus-4118815a76b760dea8e7.svg'},{'revision':null,'url':'/decidim-packs/media/images/hacker_news-b117e036a024756086ab.svg'},{'revision':null,'url':'/decidim-packs/media/images/icon-b430778003d66a91efc0.svg'},{'revision':null,'url':'/decidim-packs/media/images/icons-c4fd0f43651700b0c768.svg'},{'revision':null,'url':'/decidim-packs/media/images/layers-2x-8f2c4d11474275fbc161.png'},{'revision':null,'url':'/decidim-packs/media/images/layers-416d91365b44e4b4f477.png'},{'revision':null,'url':'/decidim-packs/media/images/linkedin-96905a0a4097dc978626.svg'},{'revision':null,'url':'/decidim-packs/media/images/marker-icon-2b3e1faf89f94a483539.png'},{'revision':null,'url':'/decidim-packs/media/images/marker-icon-2x-680f69f3c2e6b90c1812.png'},{'revision':null,'url':'/decidim-packs/media/images/marker-shadow-a0c6cc1401c107b501ef.png'},{'revision':null,'url':'/decidim-packs/media/images/odnoklassniki-cef3146ee2d5fdb32157.svg'},{'revision':null,'url':'/decidim-packs/media/images/pattern-9e37fb0574a565bf2708.png'},{'revision':null,'url':'/decidim-packs/media/images/pinterest-e1a7ea454b158f6c3fd6.svg'},{'revision':null,'url':'/decidim-packs/media/images/placeholder-61ceac35d772dbb11647.jpg'},{'revision':null,'url':'/decidim-packs/media/images/qq-883b6ea8c69ef9ce093c.svg'},{'revision':null,'url':'/decidim-packs/media/images/reddit-f39b812702e7016a015a.svg'},{'revision':null,'url':'/decidim-packs/media/images/telegram-ca65ba180088505e1371.svg'},{'revision':null,'url':'/decidim-packs/media/images/tumblr-4d59e5b74838fa10b52f.svg'},{'revision':null,'url':'/decidim-packs/media/images/twitter-ee390c342f9f90074a88.svg'},{'revision':null,'url':'/decidim-packs/media/images/vkontakte-e41f3b3192e8f0eab1d1.svg'},{'revision':null,'url':'/decidim-packs/media/images/wechat-28b576b3290e9cb55115.svg'},{'revision':null,'url':'/decidim-packs/media/images/weibo-20a80f206cb23e64c556.svg'},{'revision':null,'url':'/decidim-packs/media/images/whatsapp-8f3586f10ca30504aed4.svg'},{'revision':null,'url':'/decidim-packs/media/images/xing-dc9a2b2304a9d39eea11.svg'}];
+var dummy = [{'revision':'c3bc0062c730a38445b37ca529dfa339','url':'/decidim-packs/css/decidim_admin.css'},{'revision':'ba09d7f990387b6721f05187ee59e21d','url':'/decidim-packs/css/decidim_api_docs.css'},{'revision':'d61224b3ee6dd9f9fc723de44cc6f929','url':'/decidim-packs/css/decidim_api_graphiql.css'},{'revision':'cd6116144444d3c5cde19b81129b3949','url':'/decidim-packs/css/decidim_conference_diploma.css'},{'revision':'40b0474e614247ec72094d057e92d5e7','url':'/decidim-packs/css/decidim_core.css'},{'revision':'5211ebdd7ec7a83efbc2353da9e31638','url':'/decidim-packs/css/decidim_dev.css'},{'revision':'cb9680a426c5d8634886cb068639e132','url':'/decidim-packs/css/decidim_elections_trustee_zone.css'},{'revision':'e2059934333effa1145c74e0da89bb81','url':'/decidim-packs/css/decidim_email.css'},{'revision':'27848254604848c45139df45ef7a16ac','url':'/decidim-packs/css/decidim_initiatives_initiatives_votes.css'},{'revision':'7c16b4dea549c8eff90297a8f1fe1f90','url':'/decidim-packs/css/decidim_initiatives_print.css'},{'revision':'54c95619b7a714fd62199f673b7b58fb','url':'/decidim-packs/css/decidim_map.css'},{'revision':'f7892165e89bdc4632c0fe5d91274268','url':'/decidim-packs/css/decidim_questionnaire_answers_pdf.css'},{'revision':'dd0aa7bc2f48ba43f60ba9ad8ef2bcb5','url':'/decidim-packs/css/decidim_system.css'},{'revision':'80238ca5be0c21b400bb49df3f9adb6e','url':'/decidim-packs/css/decidim_templates.css'},{'revision':'210e036d06cb7e9e65962f0b581c1416','url':'/decidim-packs/css/decidim_votings_admin_votings.css'},{'revision':'6ad6594188ef7ebeb6f4f75f660ae8a8','url':'/decidim-packs/css/vendors-node_modules_graphiql_esm_index_js-node_modules_graphiql_graphiql_css.css'},{'revision':'4414bd6836568fff1f8decd2425fe0bd','url':'/decidim-packs/js/_rbenv_versions_2_7_4_lib_ruby_gems_2_7_0_bundler_gems_decidim-4dc4fca38ac9_decidim-admin_app-1eb4eb.js'},{'revision':'636457fe733e9d5481ec8f06df230aa9','url':'/decidim-packs/js/_rbenv_versions_2_7_4_lib_ruby_gems_2_7_0_bundler_gems_decidim-4dc4fca38ac9_decidim-core_app_-0f3a44.js'},{'revision':'800c42e3eda37bd48e2eafb7405ab9d5','url':'/decidim-packs/js/_rbenv_versions_2_7_4_lib_ruby_gems_2_7_0_bundler_gems_decidim-4dc4fca38ac9_decidim-core_app_-5a900f.js'},{'revision':'91fc8cf37d2b03285b2219a4239d3e3c','url':'/decidim-packs/js/_rbenv_versions_2_7_4_lib_ruby_gems_2_7_0_bundler_gems_decidim-4dc4fca38ac9_decidim-core_app_-7b1fad.js'},{'revision':'614cde7914b6592446c97f1f2721aecc','url':'/decidim-packs/js/_rbenv_versions_2_7_4_lib_ruby_gems_2_7_0_bundler_gems_decidim-4dc4fca38ac9_decidim-core_app_-81be1f.js'},{'revision':'acc130a981b035ebdb73d281bd72fb81','url':'/decidim-packs/js/_rbenv_versions_2_7_4_lib_ruby_gems_2_7_0_bundler_gems_decidim-4dc4fca38ac9_decidim-core_app_-e0cfda.js'},{'revision':'d3b3fd5e557f2740bdefb9ca4ae18291','url':'/decidim-packs/js/_rbenv_versions_2_7_4_lib_ruby_gems_2_7_0_bundler_gems_decidim-4dc4fca38ac9_decidim-forms_app-7c1c0e.js'},{'revision':'def92b85fa7f89d5c2f999ce7499e2fd','url':'/decidim-packs/js/decidim_accountability.js'},{'revision':'01db9768940cdac5a816688c4a7f40e4','url':'/decidim-packs/js/decidim_accountability_admin.js'},{'revision':'b9498c1743a59a42601bc3863fa82a87','url':'/decidim-packs/js/decidim_admin.js'},{'revision':'0abab2d483c10325d856b964c869dad3','url':'/decidim-packs/js/decidim_api_docs.js'},{'revision':'0bff049be8ebb7937b63d71e33c6fe5f','url':'/decidim-packs/js/decidim_api_graphiql.js'},{'revision':'900c49c5a6283fcb8acd0930953ae66f','url':'/decidim-packs/js/decidim_assemblies.js'},{'revision':'406bde3600163ddc8919b15c3545d2a5','url':'/decidim-packs/js/decidim_assemblies_admin.js'},{'revision':'2e914cdf90ea217358e5545ebf5632d8','url':'/decidim-packs/js/decidim_blogs.js'},{'revision':'2ec02e7a6c58f3339d428d61e26e8ea0','url':'/decidim-packs/js/decidim_budgets.js'},{'revision':'8eb535675bb573f29f8a867f7e5593d6','url':'/decidim-packs/js/decidim_conference_diploma.js'},{'revision':'a50986e2a563f4438c3080b31c034042','url':'/decidim-packs/js/decidim_conferences_admin.js'},{'revision':'ca8c53bf0efdacec1ec5a143315702da','url':'/decidim-packs/js/decidim_consultations.js'},{'revision':'9e8190fcffa4bd0961cb7bd931731364','url':'/decidim-packs/js/decidim_core.js'},{'revision':'4467685a88bfa55fd69b4e27873a13d5','url':'/decidim-packs/js/decidim_debates_admin.js'},{'revision':'25d38f318b2bb56f79c9c3c6cc1adb9a','url':'/decidim-packs/js/decidim_dev.js'},{'revision':'9f85d31107ad3558a44e3279d3c5115b','url':'/decidim-packs/js/decidim_elections.js'},{'revision':'a90a288e511bd9a6ee27882202f02357','url':'/decidim-packs/js/decidim_elections_admin_pending_action.js'},{'revision':'8639e1b663b00cbfea45fdc2a16119b5','url':'/decidim-packs/js/decidim_elections_admin_trustees_process.js'},{'revision':'428c4905ea0e78a56894bb22a2261fad','url':'/decidim-packs/js/decidim_elections_admin_vote_statistics.js'},{'revision':'870f3241d98f2b08e4676ec232691d8c','url':'/decidim-packs/js/decidim_elections_election_log.js'},{'revision':'95e5e7d36fddf8db71203d3f65b0dde4','url':'/decidim-packs/js/decidim_elections_onboarding.js'},{'revision':'bba0ab40c00d7a1962d1abfe691ea2d2','url':'/decidim-packs/js/decidim_elections_trustee_key_ceremony.js'},{'revision':'29d23a50c1243ad91b9fe46dea7d6f5d','url':'/decidim-packs/js/decidim_elections_trustee_tally_started.js'},{'revision':'1c2b4934e523e7b3feaf316676a3a8c4','url':'/decidim-packs/js/decidim_elections_trustee_trustee_zone.js'},{'revision':'b0b68aabaac85a388391890f04a92145','url':'/decidim-packs/js/decidim_elections_trustee_zone.js'},{'revision':'5f72ac83cde7c0607b7c9735fffffe5f','url':'/decidim-packs/js/decidim_elections_voter_casting_vote.js'},{'revision':'4281594d7e89c47c08ebb7a07f8f9b89','url':'/decidim-packs/js/decidim_elections_voter_new_vote.js'},{'revision':'e4be85f70f25d2215aa387c8f27687ab','url':'/decidim-packs/js/decidim_elections_voter_setup_preview.js'},{'revision':'bc4cc4b22c4c32023ec773d2951c9226','url':'/decidim-packs/js/decidim_elections_voter_setup_vote.js'},{'revision':'1800016310628bc9c03c0dbbcfe47df4','url':'/decidim-packs/js/decidim_elections_voter_verify_vote.js'},{'revision':'3325584f69209720f7177c5802b9e904','url':'/decidim-packs/js/decidim_email.js'},{'revision':'80ca2041cf8047f98cf331e65029957e','url':'/decidim-packs/js/decidim_forms.js'},{'revision':'32c5579d558ec19a60a382c57bac4a63','url':'/decidim-packs/js/decidim_forms_admin.js'},{'revision':'e8d1eed30b9bcb9ba52a9fc5e3e38b89','url':'/decidim-packs/js/decidim_geocoding_provider_here.js'},{'revision':'d324b9492193dd3d553ad0614c3fc7a2','url':'/decidim-packs/js/decidim_geocoding_provider_photon.js'},{'revision':'cd7f6f44d25d674f19e4d76642381ff1','url':'/decidim-packs/js/decidim_initiatives.js'},{'revision':'2caad246493a03a29634e78fcc66fb3d','url':'/decidim-packs/js/decidim_initiatives_admin.js'},{'revision':'05c1de450ca49b660fb0987cb1a137fc','url':'/decidim-packs/js/decidim_initiatives_initiatives_votes.js'},{'revision':'1b80ea50762807729a72ee75e0431f2a','url':'/decidim-packs/js/decidim_initiatives_print.js'},{'revision':'dc945131d797f46cf2e2c999cec095d5','url':'/decidim-packs/js/decidim_map.js'},{'revision':'37c8b4fedc573fe21f8fed31fa2cdfbb','url':'/decidim-packs/js/decidim_map_provider_default.js'},{'revision':'106f2041df3292079cd70960e2ce9a0d','url':'/decidim-packs/js/decidim_map_provider_here.js'},{'revision':'f014c26cf1a766023200f8ea778c3b2c','url':'/decidim-packs/js/decidim_meetings.js'},{'revision':'00a1c0f54f32cdbff238fee3aa2da605','url':'/decidim-packs/js/decidim_meetings_admin.js'},{'revision':'57e6054d7d5bbd2348d3e31027637134','url':'/decidim-packs/js/decidim_pages.js'},{'revision':'1eb3ea28d86635422e0edfe335f40a56','url':'/decidim-packs/js/decidim_participatory_processes.js'},{'revision':'3518df6078c84d72619564a69238f8f3','url':'/decidim-packs/js/decidim_participatory_processes_admin.js'},{'revision':'0a0ec614c7fe721a1dcde9a291e9c9ed','url':'/decidim-packs/js/decidim_proposals.js'},{'revision':'4b6ca09e38c7c711e9dac0b67bcace8c','url':'/decidim-packs/js/decidim_proposals_admin.js'},{'revision':'b0e90261cc6fe2918af885a419c6e366','url':'/decidim-packs/js/decidim_questionnaire_answers_pdf.js'},{'revision':'d0b4b01a43693d79dea1c5e8d5a499a0','url':'/decidim-packs/js/decidim_sortitions.js'},{'revision':'4aec61402be38142b1bf60f3c5c2b954','url':'/decidim-packs/js/decidim_system.js'},{'revision':'0f7dff23b61a7932ed3a8bd628bd22a7','url':'/decidim-packs/js/decidim_templates.js'},{'revision':'6cb55de3b75cbb8dd4383569548da36b','url':'/decidim-packs/js/decidim_votings_admin_monitoring_committee_members_form.js'},{'revision':'770e84b7c5b12fd8b22c2598766d6952','url':'/decidim-packs/js/decidim_votings_admin_polling_officers_form.js'},{'revision':'e191dc8dbab33d8bc3fba1a19c2c5e8f','url':'/decidim-packs/js/decidim_votings_admin_polling_officers_picker.js'},{'revision':'025ccfd6e3f99b9065c10086ddae642c','url':'/decidim-packs/js/decidim_votings_admin_polling_stations_form.js'},{'revision':'16ef980d3b48dfc7f967a72dca68c452','url':'/decidim-packs/js/decidim_votings_admin_update_census_dataset_status.js'},{'revision':'3d6bf0281691896d5c6cdeeb8d8887ad','url':'/decidim-packs/js/decidim_votings_admin_votings.js'},{'revision':'e44b7d30b8da778b0eeeb74929e2797f','url':'/decidim-packs/js/decidim_votings_in_person_vote.js'},{'revision':'271640d4b5332244280de35cc3523561','url':'/decidim-packs/js/decidim_votings_voting_description_cell.js'},{'revision':'676ac0a369742a6a65c58fa7b544dc3a','url':'/decidim-packs/js/decidim_votings_voting_polling_officer_zone_edit_closure.js'},{'revision':'327709218be98056a5004b501a00df5c','url':'/decidim-packs/js/decidim_votings_voting_polling_officer_zone_in_person_vote.js'},{'revision':'9305eb111abb6507a0cedafeaa103cb3','url':'/decidim-packs/js/decidim_votings_voting_polling_officer_zone_new_closure.js'},{'revision':'3cf927af218808dd5a2994eaadfaf9e4','url':'/decidim-packs/js/decidim_votings_voting_polling_officer_zone_sign_closure.js'},{'revision':'5dbcfd28634cfaedaaf87b24e451409c','url':'/decidim-packs/js/decidim_widget.js'},{'revision':'f29153728c6944c8c11d7738da5b195b','url':'/decidim-packs/js/node_modules_babel_runtime_regenerator_index_js-node_modules_tarekraafat_autocomplete_js_dist-beca7d.js'},{'revision':'56554ea3e496af04c3eeaa3536047315','url':'/decidim-packs/js/vendors-node_modules_axe-core_axe_js.js'},{'revision':'3e4899426c0860312c7c818f1c8f075e','url':'/decidim-packs/js/vendors-node_modules_babel_runtime_regenerator_index_js-node_modules_tarekraafat_autocomplete-3d61de.js'},{'revision':'ff5e94b029a1c45ceea2486649ac3041','url':'/decidim-packs/js/vendors-node_modules_d3-array_src_index_js-node_modules_d3-collection_src_index_js-node_modul-f618e0.js'},{'revision':'42b20f307bc5013a2ce911cfcf236042','url':'/decidim-packs/js/vendors-node_modules_d3-drag_src_drag_js-node_modules_d3-fetch_src_json_js-node_modules_d3-fo-5cde09.js'},{'revision':'2bc2c3cb44eba6c0885ce8faac1498e4','url':'/decidim-packs/js/vendors-node_modules_decidim_voting_schemes-dummy_src_index_js-node_modules_decidim_voting_sc-1fa8e6.js'},{'revision':'928a7d1eedb49b2390e98c206c28cab0','url':'/decidim-packs/js/vendors-node_modules_diff_lib_index_mjs.js'},{'revision':'2560ce625fe87cfcfef09004a903ad29','url':'/decidim-packs/js/vendors-node_modules_graphql_language_printer_mjs-node_modules_graphql_language_source_mjs.js'},{'revision':'9d8293593e89e3255f730b6f949206cf','url':'/decidim-packs/js/vendors-node_modules_html5sortable_dist_html5sortable_es_js.js'},{'revision':'c05d44ceeff793228d375e9601229c48','url':'/decidim-packs/js/vendors-node_modules_joeattardi_emoji-button_dist_index_js-node_modules_zeitiger_appendaround-a972be.js'},{'revision':'497a6353649b7f580915158fe23d1d85','url':'/decidim-packs/js/vendors-node_modules_jquery-serializejson_jquery_serializejson_js.js'},{'revision':'0ded8d9ee5deb429b5520e7aa0f7a3fa','url':'/decidim-packs/js/vendors-node_modules_leaflet_markercluster_dist_leaflet_markercluster-src_js-node_modules_lea-91385c.js'},{'revision':'c1acb7f6bd1f1ecea8175fb641111a48','url':'/decidim-packs/js/vendors-node_modules_rails_activestorage_app_assets_javascripts_activestorage_js-node_modules-301abc.js'},{'revision':'2cdb8c839c4c31a15ba11ee5bcb7d73a','url':'/decidim-packs/js/vendors-node_modules_regenerator-runtime_runtime_js.js'},{'revision':null,'url':'/decidim-packs/media/documents/057f608bdff3d77526ff.odt'},{'revision':null,'url':'/decidim-packs/media/documents/0e67170e72070b470a07.md'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_400-9c6e4dfdd59c9f0df0f8.ttf'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_400-c60b44947671d757833d.woff2'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_400-f8eb0fd7380512a226cd.woff'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_600-079db4a1c8da8ec06700.woff2'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_600-321eaeac03e6321b823f.woff'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_600-a2c16f2d0995dcf36831.ttf'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_900-7852ed941061eb34f8a3.woff'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_900-cdf7b11440b90af6a688.ttf'},{'revision':null,'url':'/decidim-packs/media/images/Source_Sans_Pro_900-d5a56e0c3bdd31eaadd4.woff2'},{'revision':null,'url':'/decidim-packs/media/images/avatar-multiuser-67c042dbbc8661cd06df.png'},{'revision':null,'url':'/decidim-packs/media/images/cc-badge-afa3eec02a18f532285b.png'},{'revision':null,'url':'/decidim-packs/media/images/decidim-logo-318879ac2f9a6dd9ab6b.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_accountability-55aaa6f0f7f85234bad7.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_assemblies-d9571d0b2d158eb891c8.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_blogs-5c0bd36dad84fad9d502.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_budgets-63f448a8ecee4f8376a0.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_conferences-d8f8364c84ea50df120f.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_consultations-b751dc698919e88293cc.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_debates-b8d6b95f59fdb4c76d08.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_dev_dummy-7c65732068c5ec7c313e.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_elections-15e5583a7f2834cd644e.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_accepted_proposals-907eee548361dfee6abe.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_attended_meetings-0a385f1bbe5a6e378d14.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_commented_debates-753fa30fa95d1cb600eb.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_followers-36313db34d9f324a71e6.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_initiatives-c956bd99a6da11e4c751.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_invitations-c1fe9eaba927bd4898c5.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_proposal_votes-13426dd64ea84f600a64.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_proposals-92b1e6ff9b790aad8550.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_gamification_badges_test-12369bee0baf637c42e9.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_initiatives-8822c933216741c5fd30.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_meetings-f1cb40f132fbc2fa9a00.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_pages-ad2a544f33159fa4409a.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_participatory_processes-6418d7bb8c56608fe377.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_proposals-15e5583a7f2834cd644e.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_surveys-5771e3e945ff9473a563.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_templates-15e5583a7f2834cd644e.svg'},{'revision':null,'url':'/decidim-packs/media/images/decidim_votings-d8f8364c84ea50df120f.svg'},{'revision':null,'url':'/decidim-packs/media/images/default-avatar-aaa9e55bac5d7159b847.svg'},{'revision':null,'url':'/decidim-packs/media/images/delicious-645ddfaca5163af23947.svg'},{'revision':null,'url':'/decidim-packs/media/images/douban-59306a4ec1a7595eda35.svg'},{'revision':null,'url':'/decidim-packs/media/images/email-d79a53d1d223015094db.svg'},{'revision':null,'url':'/decidim-packs/media/images/facebook-0ada3788990cda55b9ba.svg'},{'revision':null,'url':'/decidim-packs/media/images/google-b8225d6a9b718fa1749f.svg'},{'revision':null,'url':'/decidim-packs/media/images/google_bookmark-524f99e4fffb564dda37.svg'},{'revision':null,'url':'/decidim-packs/media/images/google_plus-4118815a76b760dea8e7.svg'},{'revision':null,'url':'/decidim-packs/media/images/hacker_news-b117e036a024756086ab.svg'},{'revision':null,'url':'/decidim-packs/media/images/icon-b430778003d66a91efc0.svg'},{'revision':null,'url':'/decidim-packs/media/images/icons-c4fd0f43651700b0c768.svg'},{'revision':null,'url':'/decidim-packs/media/images/layers-2x-8f2c4d11474275fbc161.png'},{'revision':null,'url':'/decidim-packs/media/images/layers-416d91365b44e4b4f477.png'},{'revision':null,'url':'/decidim-packs/media/images/linkedin-96905a0a4097dc978626.svg'},{'revision':null,'url':'/decidim-packs/media/images/marker-icon-2b3e1faf89f94a483539.png'},{'revision':null,'url':'/decidim-packs/media/images/marker-icon-2x-680f69f3c2e6b90c1812.png'},{'revision':null,'url':'/decidim-packs/media/images/marker-shadow-a0c6cc1401c107b501ef.png'},{'revision':null,'url':'/decidim-packs/media/images/odnoklassniki-cef3146ee2d5fdb32157.svg'},{'revision':null,'url':'/decidim-packs/media/images/pattern-9e37fb0574a565bf2708.png'},{'revision':null,'url':'/decidim-packs/media/images/pinterest-e1a7ea454b158f6c3fd6.svg'},{'revision':null,'url':'/decidim-packs/media/images/placeholder-61ceac35d772dbb11647.jpg'},{'revision':null,'url':'/decidim-packs/media/images/qq-883b6ea8c69ef9ce093c.svg'},{'revision':null,'url':'/decidim-packs/media/images/reddit-f39b812702e7016a015a.svg'},{'revision':null,'url':'/decidim-packs/media/images/telegram-ca65ba180088505e1371.svg'},{'revision':null,'url':'/decidim-packs/media/images/tumblr-4d59e5b74838fa10b52f.svg'},{'revision':null,'url':'/decidim-packs/media/images/twitter-ee390c342f9f90074a88.svg'},{'revision':null,'url':'/decidim-packs/media/images/vkontakte-e41f3b3192e8f0eab1d1.svg'},{'revision':null,'url':'/decidim-packs/media/images/wechat-28b576b3290e9cb55115.svg'},{'revision':null,'url':'/decidim-packs/media/images/weibo-20a80f206cb23e64c556.svg'},{'revision':null,'url':'/decidim-packs/media/images/whatsapp-8f3586f10ca30504aed4.svg'},{'revision':null,'url':'/decidim-packs/media/images/xing-dc9a2b2304a9d39eea11.svg'}];
 self.addEventListener("push", function (event) {
   var _event$data$json = event.data.json(),
       title = _event$data$json.title,
@@ -6820,7 +6820,8 @@ self.addEventListener("notificationclick", function (event) {
 (0,workbox_recipes__WEBPACK_IMPORTED_MODULE_0__.offlineFallback)({
   pageFallback: "/offline"
 });
-}();
+})();
+
 /******/ })()
 ;
 //# sourceMappingURL=sw.js.map
