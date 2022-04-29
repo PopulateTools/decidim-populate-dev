@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_20_092105) do
+ActiveRecord::Schema.define(version: 2022_04_29_053131) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1977,7 +1977,6 @@ ActiveRecord::Schema.define(version: 2022_04_20_092105) do
     t.boolean "admin", default: false, null: false
     t.boolean "managed", default: false, null: false
     t.string "roles", default: [], array: true
-    t.boolean "email_on_notification", default: false, null: false
     t.string "nickname", limit: 20, default: "", null: false
     t.string "personal_url"
     t.text "about"
