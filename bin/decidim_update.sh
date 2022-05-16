@@ -13,6 +13,7 @@ function log() {
 }
 
 log "Remove previous Gemfile.lock (testing)" && rm Gemfile.lock && bundle install
+log "Lock Gemfile for Linux too" && bundle lock --add-platform x86_64-linux
 log "Clear packages" && rm -rf package*
 log "Updating decidim webpacker config" && bin/rails decidim:webpacker:install
 log "Installing decidim new migrations" && bin/rails decidim:choose_target_plugins && bin/rails railties:install:migrations
