@@ -21,7 +21,7 @@ gem 'faker', '~> 2.14'
 
 gem 'sidekiq'
 
-gem 'letter_opener_web', '~> 1.3'
+gem 'letter_opener_web', '~> 2'
 
 # Performance
 gem "appsignal", "= 3.0.6"
