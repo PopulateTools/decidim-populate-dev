@@ -23,9 +23,6 @@ gem 'sidekiq'
 
 gem 'letter_opener_web', '~> 2'
 
-# Performance
-gem "appsignal", "= 3.0.6"
-
 group :development, :test do
   gem 'decidim-dev', git: REPO, branch: BRANCH
 
