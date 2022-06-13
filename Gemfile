@@ -31,7 +31,6 @@ group :development, :test do
   # Use latest simplecov from master until next version of simplecov is
   # released (greather than 0.18.5)
   # See https://github.com/decidim/decidim/issues/6230
-  gem 'simplecov', '~> 0.19.0'
 end
 
 group :development do
