@@ -87,11 +87,6 @@ Rails.application.configure do
 
   ## Mailing
   config.action_mailer.delivery_method = :letter_opener_web
-  config.action_mailer.smtp_settings = {
-    address: Rails.application.secrets.smtp_address,
-    port: Rails.application.secrets.smtp_port,
-    domain: Rails.application.secrets.smtp_domain
-  }
 
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
