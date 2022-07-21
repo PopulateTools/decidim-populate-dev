@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_13_100423) do
+ActiveRecord::Schema.define(version: 2022_07_21_032006) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -372,6 +372,9 @@ ActiveRecord::Schema.define(version: 2022_06_13_100423) do
     t.date "selected_at"
     t.integer "comments_count", default: 0, null: false
     t.integer "follows_count", default: 0, null: false
+    t.text "address"
+    t.float "latitude"
+    t.float "longitude"
     t.index ["decidim_budgets_budget_id"], name: "index_decidim_budgets_projects_on_decidim_budgets_budget_id"
     t.index ["decidim_scope_id"], name: "index_decidim_budgets_projects_on_decidim_scope_id"
   end
@@ -827,7 +830,6 @@ ActiveRecord::Schema.define(version: 2022_06_13_100423) do
   create_table "decidim_elections_questions", force: :cascade do |t|
     t.bigint "decidim_elections_election_id", null: false
     t.jsonb "title", null: false
-    t.jsonb "description"
     t.integer "max_selections", default: 1, null: false
     t.integer "weight", default: 0, null: false
     t.boolean "random_answers_order", default: true, null: false
@@ -1083,6 +1085,12 @@ ActiveRecord::Schema.define(version: 2022_06_13_100423) do
     t.index ["state"], name: "index_decidim_initiatives_committee_members_on_state"
   end
 
+  create_table "decidim_initiatives_settings", force: :cascade do |t|
+    t.string "initiatives_order", default: "random"
+    t.bigint "decidim_organization_id"
+    t.index ["decidim_organization_id"], name: "index_decidim_initiatives_settings_on_decidim_organization_id"
+  end
+
   create_table "decidim_initiatives_type_scopes", force: :cascade do |t|
     t.bigint "decidim_initiatives_types_id"
     t.bigint "decidim_scopes_id"
@@ -1113,6 +1121,7 @@ ActiveRecord::Schema.define(version: 2022_06_13_100423) do
     t.boolean "custom_signature_end_date_enabled", default: false, null: false
     t.boolean "attachments_enabled", default: false, null: false
     t.boolean "area_enabled", default: false, null: false
+    t.boolean "comments_enabled", default: true, null: false
     t.index ["decidim_organization_id"], name: "index_decidim_initiative_types_on_decidim_organization_id"
   end
 
@@ -1486,8 +1495,8 @@ ActiveRecord::Schema.define(version: 2022_06_13_100423) do
   create_table "decidim_participatory_process_steps", id: :serial, force: :cascade do |t|
     t.jsonb "title", null: false
     t.jsonb "description"
-    t.date "start_date"
-    t.date "end_date"
+    t.datetime "start_date"
+    t.datetime "end_date"
     t.integer "decidim_participatory_process_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -2023,6 +2032,8 @@ ActiveRecord::Schema.define(version: 2022_06_13_100423) do
     t.string "notifications_sending_frequency", default: "none"
     t.datetime "digest_sent_at"
     t.jsonb "notification_settings", default: {}
+    t.datetime "password_updated_at"
+    t.string "previous_passwords", default: [], array: true
     t.index ["confirmation_token"], name: "index_decidim_users_on_confirmation_token", unique: true
     t.index ["decidim_organization_id"], name: "index_decidim_users_on_decidim_organization_id"
     t.index ["email", "decidim_organization_id"], name: "index_decidim_users_on_email_and_decidim_organization_id", unique: true, where: "((deleted_at IS NULL) AND (managed = false) AND ((type)::text = 'Decidim::User'::text))"
@@ -2095,7 +2106,7 @@ ActiveRecord::Schema.define(version: 2022_06_13_100423) do
   end
 
   create_table "decidim_votings_census_datasets", force: :cascade do |t|
-    t.string "file"
+    t.string "filename"
     t.integer "status", null: false
     t.integer "data_count"
     t.integer "csv_row_raw_count", null: false
@@ -2271,6 +2282,7 @@ ActiveRecord::Schema.define(version: 2022_06_13_100423) do
   add_foreign_key "decidim_editor_images", "decidim_users", column: "decidim_author_id"
   add_foreign_key "decidim_elections_trustees", "decidim_organizations"
   add_foreign_key "decidim_identities", "decidim_organizations"
+  add_foreign_key "decidim_initiatives_settings", "decidim_organizations"
   add_foreign_key "decidim_newsletters", "decidim_users", column: "author_id"
   add_foreign_key "decidim_participatory_process_steps", "decidim_participatory_processes"
   add_foreign_key "decidim_participatory_process_types", "decidim_organizations"
