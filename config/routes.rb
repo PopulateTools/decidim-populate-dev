@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  if Rails.env.development? || Rails.env.staging?
+  if Rails.env.development? || Rails.env.staging? || Rails.env.production?
     mount LetterOpenerWeb::Engine, at: '/letter_opener'
   end
 
