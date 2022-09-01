@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/PopulateTools/decidim.git
-  revision: 69d439605bfb5f35e1b678fe74bbbfd87bf816db
+  revision: d95207e3e62350d05eb524f8792266715d96f7cb
   branch: pwa-staging
   specs:
     decidim (0.28.0.dev)
@@ -788,7 +788,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    ssrf_filter (1.1.0)
+    ssrf_filter (1.1.1)
     temple (0.8.2)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
