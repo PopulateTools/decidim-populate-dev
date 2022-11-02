@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_21_032006) do
+ActiveRecord::Schema.define(version: 2022_11_02_102310) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -297,6 +297,25 @@ ActiveRecord::Schema.define(version: 2022_07_21_032006) do
     t.index ["attachment_collection_id"], name: "index_decidim_attachments_on_attachment_collection_id"
   end
 
+  create_table "decidim_authorization_transfer_records", force: :cascade do |t|
+    t.bigint "transfer_id", null: false
+    t.string "resource_type", null: false
+    t.bigint "resource_id", null: false
+    t.datetime "created_at", null: false
+    t.index ["resource_type", "resource_id"], name: "index_decidim_authorization_transfer_records_on_resource"
+    t.index ["transfer_id"], name: "index_decidim_authorization_transfer_records_on_transfer_id"
+  end
+
+  create_table "decidim_authorization_transfers", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "source_user_id", null: false
+    t.bigint "authorization_id", null: false
+    t.datetime "created_at", null: false
+    t.index ["authorization_id"], name: "index_decidim_authorization_transfers_on_authorization_id"
+    t.index ["source_user_id"], name: "index_decidim_authorization_transfers_on_source_user_id"
+    t.index ["user_id"], name: "index_decidim_authorization_transfers_on_user_id"
+  end
+
   create_table "decidim_authorizations", id: :serial, force: :cascade do |t|
     t.string "name", null: false
     t.jsonb "metadata"
@@ -324,6 +343,7 @@ ActiveRecord::Schema.define(version: 2022_07_21_032006) do
     t.integer "endorsements_count", default: 0, null: false
     t.integer "comments_count", default: 0, null: false
     t.integer "follows_count", default: 0, null: false
+    t.datetime "published_at"
     t.index ["decidim_author_id", "decidim_author_type"], name: "index_decidim_blogs_posts_on_decidim_author"
     t.index ["decidim_component_id"], name: "index_decidim_blogs_posts_on_decidim_component_id"
     t.index ["decidim_user_group_id"], name: "index_decidim_blogs_posts_on_decidim_user_group_id"
@@ -2268,6 +2288,10 @@ ActiveRecord::Schema.define(version: 2022_07_21_032006) do
   add_foreign_key "decidim_assemblies", "decidim_assemblies_types"
   add_foreign_key "decidim_assemblies_settings", "decidim_organizations"
   add_foreign_key "decidim_attachments", "decidim_attachment_collections", column: "attachment_collection_id", name: "fk_decidim_attachments_attachment_collection_id", on_delete: :nullify
+  add_foreign_key "decidim_authorization_transfer_records", "decidim_authorization_transfers", column: "transfer_id"
+  add_foreign_key "decidim_authorization_transfers", "decidim_authorizations", column: "authorization_id"
+  add_foreign_key "decidim_authorization_transfers", "decidim_users", column: "source_user_id"
+  add_foreign_key "decidim_authorization_transfers", "decidim_users", column: "user_id"
   add_foreign_key "decidim_authorizations", "decidim_users"
   add_foreign_key "decidim_budgets_budgets", "decidim_scopes"
   add_foreign_key "decidim_budgets_orders", "decidim_budgets_budgets"
