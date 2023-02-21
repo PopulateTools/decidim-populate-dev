@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_02_102310) do
+ActiveRecord::Schema.define(version: 2023_02_21_144034) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -549,6 +549,7 @@ ActiveRecord::Schema.define(version: 2022_11_02_102310) do
     t.date "sign_date"
     t.datetime "diploma_sent_at"
     t.integer "follows_count", default: 0, null: false
+    t.integer "weight", default: 0, null: false
     t.index ["decidim_organization_id", "slug"], name: "index_unique_conference_slug_and_organization", unique: true
     t.index ["decidim_organization_id"], name: "index_decidim_conferences_on_decidim_organization_id"
     t.index ["decidim_scope_id"], name: "index_decidim_conferences_on_decidim_scope_id"
@@ -1947,6 +1948,8 @@ ActiveRecord::Schema.define(version: 2022_11_02_102310) do
     t.jsonb "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.json "field_values", default: {}
+    t.string "target"
     t.index ["decidim_organization_id"], name: "index_decidim_templates_organization"
     t.index ["templatable_type", "templatable_id"], name: "index_decidim_templates_templatable"
   end
