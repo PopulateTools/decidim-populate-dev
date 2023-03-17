@@ -30,4 +30,31 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  activemodel:
+    errors:
+      models:
+        budget:
+          attributes:
+            decidim_scope_id:
+              invalid_subscope: "Invalid scope: Please select a scope that descends from the one currently selected"
+        debate:
+          attributes:
+            scope_id:
+              invalid_subscope: "Invalid scope: Please select a scope that descends from the one currently selected"
+        project:
+          attributes:
+            decidim_scope_id:
+              invalid_subscope: "Invalid scope: Please select a scope that descends from the one currently selected"
+        meeting:
+          attributes:
+            decidim_scope_id:
+              invalid_subscope: "Invalid scope: Please select a scope that descends from the one currently selected"
+        proposal:
+          attributes:
+            scope_id:
+              invalid_subscope: "Invalid scope: Please select a scope that descends from the one currently selected"
+        result:
+          attributes:
+            decidim_scope_id:
+              invalid_subscope: "Invalid scope: Please select a scope that descends from the one currently selected"
   hello: "Hello world"

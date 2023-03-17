@@ -1,46 +1,44 @@
 # frozen_string_literal: true
 
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
 ruby RUBY_VERSION
-REPO = 'https://github.com/PopulateTools/decidim.git'
-BRANCH = 'pwa-staging'
 
-gem 'decidim', git: REPO, branch: BRANCH
-gem 'decidim-conferences', git: REPO, branch: BRANCH
-gem 'decidim-consultations', git: REPO, branch: BRANCH
-gem 'decidim-elections', git: REPO, branch: BRANCH
-gem 'decidim-initiatives', git: REPO, branch: BRANCH
-gem 'decidim-templates', git: REPO, branch: BRANCH
+DECIDIM_VERSION = "0.27.2"
 
-gem 'bootsnap', '~> 1.4'
+gem "decidim", DECIDIM_VERSION
+gem "decidim-conferences", DECIDIM_VERSION
 
-gem "puma", '>= 5.5.1'
+gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer.git", branch: "master"
+gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome.git", branch: "main"
 
-gem 'faker', '~> 2.14'
+# Performance
+gem "appsignal"
 
+gem "bootsnap"
+
+gem "puma"
+
+gem "faker", "~> 2.14"
+
+gem "wicked_pdf", "~> 2.1"
 gem 'sidekiq'
+gem "aws-sdk-s3", require: false
 
-gem 'letter_opener_web', '~> 2'
+# Fixes an error with Ruby 3.1.2 and Psych 4.0.0
+gem "psych", "< 4"
 
-gem 'dalli'
 
 group :development, :test do
-  gem 'decidim-dev', git: REPO, branch: BRANCH
+  gem "byebug", "~> 11.0", platform: :mri
 
-  gem 'byebug', '~> 11.0', platform: :mri
-
-  # Use latest simplecov from master until next version of simplecov is
-  # released (greather than 0.18.5)
-  # See https://github.com/decidim/decidim/issues/6230
+  gem "decidim-dev", DECIDIM_VERSION
 end
 
 group :development do
-  gem 'listen', '~> 3.1'
-  gem 'spring', '~> 2.0'
-  gem 'spring-watcher-listen', '~> 2.0'
-  gem 'web-console', '4.0.4'
+  gem "letter_opener_web", "~> 1.3"
+  gem "listen", "~> 3.1"
+  gem "spring", "~> 2.0"
+  gem "spring-watcher-listen", "~> 2.0"
+  gem "web-console", "~> 4.0"
 end
-
-# Use Redis for Action Cable
-gem 'redis', '~> 4.0'

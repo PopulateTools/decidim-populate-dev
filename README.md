@@ -1,8 +1,8 @@
-# decidim_development_app
+# decidim_greenpeace
 
 Free Open-Source participatory democracy, citizen participation and open government for cities and organizations
 
-This is the open-source repository for decidim_development_app, based on [Decidim](https://github.com/decidim/decidim).
+This is the open-source repository for decidim_greenpeace, based on [Decidim](https://github.com/decidim/decidim).
 
 ## Setting up the application
 
@@ -20,3 +20,4 @@ user.save!
 6. Fill the rest of the form and submit it.
 
 You're good to go!
+
