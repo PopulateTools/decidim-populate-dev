@@ -46,3 +46,4 @@ yarn-debug.log*
 
 .DS_Store*
 Thumbs.db
+app/views/static

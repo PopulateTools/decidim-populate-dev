@@ -850,6 +850,7 @@ DEPENDENCIES
   letter_opener_web (~> 2)
   listen (~> 3.1)
   puma (>= 5.5.1)
+  redis (~> 4.0)
   sidekiq
   spring (~> 2.0)
   spring-watcher-listen (~> 2.0)
