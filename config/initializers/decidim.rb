@@ -44,11 +44,11 @@ Decidim.configure do |config|
   # Map and Geocoder configuration
   #
   # == HERE Maps ==
-  config.maps = {
-    provider: :here,
-    api_key: Rails.application.secrets.maps[:api_key],
-    static: { url: "https://image.maps.ls.hereapi.com/mia/1.6/mapview" }
-  }
+  # config.maps = {
+  #   provider: :here,
+  #   api_key: Rails.application.secrets.maps[:api_key],
+  #   static: { url: "https://image.maps.ls.hereapi.com/mia/1.6/mapview" }
+  # }
   #
   # == OpenStreetMap (OSM) services ==
   # To use the OSM map service providers, you will need a service provider for
@@ -63,25 +63,25 @@ Decidim.configure do |config|
   # When used, please read carefully the terms of service for your service
   # provider.
   #
-  # config.maps = {
-  #   provider: :osm,
-  #   api_key: Rails.application.secrets.maps[:api_key],
-  #   dynamic: {
-  #     tile_layer: {
-  #       url: "https://tiles.example.org/{z}/{x}/{y}.png?key={apiKey}&{foo}",
-  #       api_key: true,
-  #       foo: "bar=baz",
-  #       attribution: %(
-  #         <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap</a> contributors
-  #       ).strip
-  #       # Translatable attribution:
-  #       # attribution: -> { I18n.t("tile_layer_attribution") }
-  #     }
-  #   },
-  #   static: { url: "https://staticmap.example.org/" },
-  #   geocoding: { host: "nominatim.example.org", use_https: true }
-  # }
-  #
+  config.maps = {
+    provider: :osm,
+    api_key: Rails.application.secrets.maps[:api_key],
+    dynamic: {
+      tile_layer: {
+        url: "https://tiles.example.org/{z}/{x}/{y}.png?key={apiKey}&{foo}",
+        api_key: true,
+        foo: "bar=baz",
+        attribution: %(
+          <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap</a> contributors
+        ).strip
+        # Translatable attribution:
+        # attribution: -> { I18n.t("tile_layer_attribution") }
+      }
+    },
+    static: { url: "https://staticmap.example.org/" },
+    geocoding: { host: "nominatim.openstreetmap.org", use_https: true }
+  }
+
   # == Combination (OpenStreetMap default + HERE Maps dynamic map tiles) ==
   # config.maps = {
   #   provider: :osm,
