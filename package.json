@@ -31,7 +31,7 @@
     "@babel/preset-react": "^7.18.6",
     "@decidim/dev": "^0.27.2",
     "@decidim/eslint-config": "^0.27.2",
-    "@decidim/stylelint-config": "^0.27.2",
+    "@decidim/stylelint-config": "^0.28.0-rc1",
     "eslint-config-prettier": "^8.7.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.27.5",
